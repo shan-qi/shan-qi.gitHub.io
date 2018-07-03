@@ -195,7 +195,7 @@ a {
 }
 .donate_bar {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 5px;
 }
 .donate_bar a.btn_donate {
   display: inline-block;
@@ -225,7 +225,7 @@ a {
   display: none;
 }
 .post-donate {
-  margin-top: 80px;
+  margin-top: 30px;
 }
 #donate_guide {
   height: 210px;
@@ -234,7 +234,7 @@ a {
 }
 #donate_guide img {
   height: 200px;
-  height: 200px;
+  width: 150px;
 }
 #container {
   min-height: 100%;
