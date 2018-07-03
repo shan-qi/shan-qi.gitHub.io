@@ -1,55 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-    
-    <entry>
-      <title>你好，世界</title>
-      <link href="/2018/07/02/%E4%BD%A0%E5%A5%BD%EF%BC%8C%E4%B8%96%E7%95%8C/"/>
-      <url>/2018/07/02/%E4%BD%A0%E5%A5%BD%EF%BC%8C%E4%B8%96%E7%95%8C/</url>
-      <content type="html"><![CDATA[<contents></contents>]]></content>
-      
-      
-    </entry>
-    
-    <entry>
-      <title>我的第一篇博客</title>
-      <link href="/2018/07/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-      <url>/2018/07/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-      <content type="html"><![CDATA[<p><excerpt in="" index="" |="" 首页摘要=""><br>+<a id="more"></a></excerpt></p><the rest="" of="" contents="" |="" 余下全文=""></the>]]></content>
-      
-      
-    </entry>
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2018/07/02/hello-world/"/>
-      <url>/2018/07/02/hello-world/</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-      
-      
-    </entry>
-    
-    <entry>
-      <title>Git-命令小结</title>
-      <link href="/2017/10/10/Git-%E5%91%BD%E4%BB%A4%E5%B0%8F%E7%BB%93/"/>
-      <url>/2017/10/10/Git-%E5%91%BD%E4%BB%A4%E5%B0%8F%E7%BB%93/</url>
-      <content type="html"><![CDATA[<blockquote><p>数据来源于网络，仅供平时查询使用</p></blockquote><h2 id="一、新建代码库"><a href="#一、新建代码库" class="headerlink" title="一、新建代码库"></a>一、新建代码库</h2><pre><code>// 在当前目录新建一个 Git 代码库git init// 新建一个目录，将其初始化为 Git 代码库git init [project-name]// 下载一个项目git clone [project-url]</code></pre><a id="more"></a><h2 id="二、基础配置"><a href="#二、基础配置" class="headerlink" title="二、基础配置"></a>二、基础配置</h2><pre><code>// 显示当前所有的 Git 配置git config --list// 编辑 Git 配置文件git config -e [--global]// 设置提交代码时的用户信息git config [--global] user.name &quot;[name]&quot;git config [--global] user.email &quot;[email]&quot;</code></pre><h2 id="三、增加-删除文件"><a href="#三、增加-删除文件" class="headerlink" title="三、增加/删除文件"></a>三、增加/删除文件</h2><pre><code>// 添加文件到暂存区git add [file] [file1] ...// 添加指定目录到暂存区，包括子目录git add [dir]// 添加当前目录的所有文件到暂存区git add .// 添加每个变化钱，都会要求确认// 对于同一个文件的多出变化，可以实现分次提交git add -p// 删除工作区文件，并且将这次删除放入暂存区git rm [file1] [file2] ...// 停止追踪指定文件，但该文件会保留在工作区git rm --cached [file]// 改名文件，并且将这个改名放入暂存区git mv [file-original] [file-renamed]</code></pre><h2 id="四、代码提交"><a href="#四、代码提交" class="headerlink" title="四、代码提交"></a>四、代码提交</h2><pre><code>// 提交暂存区到仓库区git commit -m &quot;[message]&quot;// 提交暂存区指定的文件到仓库区git commit [file1] [file2] ... -m [message]// 提交工作区自上次 commit 之后的变化，直接到仓库区git commit -a// 提交时显示所有 diff 信息git commit -b// 使用一次新的 commit，替代上一次提交git commit --amend -m &quot;[message]&quot;// 重新上一次的 commit，并包括之id那个文件的新变化git commit --amend [file1] [file2] ...</code></pre><h2 id="五、分支"><a href="#五、分支" class="headerlink" title="五、分支"></a>五、分支</h2><pre><code>// 列出所有本地的分支git branch// 列出所有远程的分支git branch -r// 列出所有本地分支和远程分支git branch -a// 新建一个分支，但依然停留在当前的分支git branch [branch_name]// 新建一个分支，并且切换到该分支git checkout -b [branch_name]// 新建一个分支，指向指定的 commitgit branch [branch_name] [commit]// 新建一个分支，与指定的远程分支建立追踪关系git branch --track [branch_name] [remote_branch]// 切换到指定的分支，并更新工作区git checkout [branch_name]// 切换到上一个分支git checkout -// 建立追踪关系，在现有分支与指定的远程分支之间git branch --set-upstream [branch_name] [remote_branch]// 合并指定分支到当前分支git merge [branch_name]// 选择一个 commit，合并到当前的分支git cherry-pick [commit]// 删除分支git branch -d [branch_name]// 删除远程分支git push origin --delete [branch_name]git branch -dr [remote/branch_name]</code></pre><h2 id="六、标签"><a href="#六、标签" class="headerlink" title="六、标签"></a>六、标签</h2><pre><code>// 列出所有 taggit tag// 新建一个 tag 在当前的 commitgit tag [tag]// 新建一个 tag 在指定的 commitgit tab [tag] [commit]// 删除本地 taggit tag -d [tag]// 删除远程 taggit push orgin :refs/tags/[tag]// 查看 tag 信息git show [tag]// 提交指定 tag 信息git push [remote] [tag]// 提交所有 taggit push [remote] --tags// 新建一个分支，指向指定某个 taggit checkout -b [branch] [tag]</code></pre><h2 id="七、查看信息"><a href="#七、查看信息" class="headerlink" title="七、查看信息"></a>七、查看信息</h2><pre><code>// 显示所有变更的文件git status// 显示当前分支的版本历史git log// 显示 commit 历史，以及每次 commit 发生的变更git log --stat// 搜索提交历史，根据关键词git log -S [keyword]// 显示某个 commit 之后所有的变动，每个 commit 占据一行git log [tag] HEAD --pretty=format:%s// 显示某个文件的版本历史，包括文件名git log --follow [file]git whatchanged [file]// 显示指定文件相关的每一次 diffgit log -p [file]// 显示过去5次提交git log -5 --pretty --oneline// 显示所有提交过的用户，按提交次数排序git shortlog -sn// 显示指定文件是什么人在什么时候修改过git blame [file]// 显示暂存区和工作区的差异git diff// 显示暂存区和上一个 commit 的差异git diff --cached [file]// 显示暂存区与当前分支最新 commit 之间的差异git diff HEAD// 显示两次提交之间的差异git diff [first_branch]...[second_branch]// 显示今天你写了多少行代码git diff --shortstat &quot;@{0 day ago}&quot;// 显示某次提交的元数据和内容变化git show [commit]// 显示某次提交发生变化的文件git show --name-only [commit]// 显示某次提交时，某个文件的内容git show [commit]:[fileName]// 显示当前分支的最近几次提交git reflog</code></pre><h2 id="八、远程同步"><a href="#八、远程同步" class="headerlink" title="八、远程同步"></a>八、远程同步</h2><pre><code>// 下载远程仓库的所有变动git fetch [remote]// 显示所有远程仓库git remote -v// 显示某个远程仓库的信息git remote show [remote]// 增加一个新的远程仓库，并命名git remote add [shortName] [url]// 取回远程仓库的变化，并与本地分支合并git pull [remote] [branch]// 上传本地指定分支到远程仓库git push [remote] --force// 推送所有分支到远程仓库git push [remote] --all</code></pre><h2 id="九、撤销"><a href="#九、撤销" class="headerlink" title="九、撤销"></a>九、撤销</h2><pre><code>// 恢复暂存区的指定文件到工作区git checkout [file]// 恢复某个 commit 的指定文件到暂存区和工作区git checkout [commit] [file]// 恢复暂存区的所有文件到工作区git checkout .// 重置暂存区的指定文件，与上一次 commit 保持一致，但工作区不变git reset [file]// 重置暂存区和工作区，与上一次的 commit 保持一致git reset --hard// 重置当iqanefnzhi的指针为指定 commit，同时重置暂存区git reset [commit]// 重置当前分支的HEAD为指定的 commit，同时重置暂存区和工作区git reset --hard [commit]// 重置当前HEAD为指定的 commit，但保持暂存区和工作区不变git rest --keep [commit]// 新建一个 commit，用来撤销指定的 commit// 后者的所有变化都将被前者抵消，并且应用到当前分支git revert [commit]// 暂时将为提交的变化移除，稍后再移入git stashgit stash pop</code></pre>]]></content>
-      
+<search>
+  <entry>
+    <title><![CDATA[你好，世界]]></title>
+    <url>%2F2018%2F07%2F02%2F%E4%BD%A0%E5%A5%BD%EF%BC%8C%E4%B8%96%E7%95%8C%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[我的第一篇博客]]></title>
+    <url>%2F2018%2F07%2F02%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[+]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F07%2F02%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Git-命令小结]]></title>
+    <url>%2F2017%2F10%2F10%2FGit-%E5%91%BD%E4%BB%A4%E5%B0%8F%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[数据来源于网络，仅供平时查询使用 一、新建代码库// 在当前目录新建一个 Git 代码库 git init // 新建一个目录，将其初始化为 Git 代码库 git init [project-name] // 下载一个项目 git clone [project-url] 二、基础配置// 显示当前所有的 Git 配置 git config --list // 编辑 Git 配置文件 git config -e [--global] // 设置提交代码时的用户信息 git config [--global] user.name &quot;[name]&quot; git config [--global] user.email &quot;[email]&quot; 三、增加/删除文件// 添加文件到暂存区 git add [file] [file1] ... // 添加指定目录到暂存区，包括子目录 git add [dir] // 添加当前目录的所有文件到暂存区 git add . // 添加每个变化钱，都会要求确认 // 对于同一个文件的多出变化，可以实现分次提交 git add -p // 删除工作区文件，并且将这次删除放入暂存区 git rm [file1] [file2] ... // 停止追踪指定文件，但该文件会保留在工作区 git rm --cached [file] // 改名文件，并且将这个改名放入暂存区 git mv [file-original] [file-renamed] 四、代码提交// 提交暂存区到仓库区 git commit -m &quot;[message]&quot; // 提交暂存区指定的文件到仓库区 git commit [file1] [file2] ... -m [message] // 提交工作区自上次 commit 之后的变化，直接到仓库区 git commit -a // 提交时显示所有 diff 信息 git commit -b // 使用一次新的 commit，替代上一次提交 git commit --amend -m &quot;[message]&quot; // 重新上一次的 commit，并包括之id那个文件的新变化 git commit --amend [file1] [file2] ... 五、分支// 列出所有本地的分支 git branch // 列出所有远程的分支 git branch -r // 列出所有本地分支和远程分支 git branch -a // 新建一个分支，但依然停留在当前的分支 git branch [branch_name] // 新建一个分支，并且切换到该分支 git checkout -b [branch_name] // 新建一个分支，指向指定的 commit git branch [branch_name] [commit] // 新建一个分支，与指定的远程分支建立追踪关系 git branch --track [branch_name] [remote_branch] // 切换到指定的分支，并更新工作区 git checkout [branch_name] // 切换到上一个分支 git checkout - // 建立追踪关系，在现有分支与指定的远程分支之间 git branch --set-upstream [branch_name] [remote_branch] // 合并指定分支到当前分支 git merge [branch_name] // 选择一个 commit，合并到当前的分支 git cherry-pick [commit] // 删除分支 git branch -d [branch_name] // 删除远程分支 git push origin --delete [branch_name] git branch -dr [remote/branch_name] 六、标签// 列出所有 tag git tag // 新建一个 tag 在当前的 commit git tag [tag] // 新建一个 tag 在指定的 commit git tab [tag] [commit] // 删除本地 tag git tag -d [tag] // 删除远程 tag git push orgin :refs/tags/[tag] // 查看 tag 信息 git show [tag] // 提交指定 tag 信息 git push [remote] [tag] // 提交所有 tag git push [remote] --tags // 新建一个分支，指向指定某个 tag git checkout -b [branch] [tag] 七、查看信息// 显示所有变更的文件 git status // 显示当前分支的版本历史 git log // 显示 commit 历史，以及每次 commit 发生的变更 git log --stat // 搜索提交历史，根据关键词 git log -S [keyword] // 显示某个 commit 之后所有的变动，每个 commit 占据一行 git log [tag] HEAD --pretty=format:%s // 显示某个文件的版本历史，包括文件名 git log --follow [file] git whatchanged [file] // 显示指定文件相关的每一次 diff git log -p [file] // 显示过去5次提交 git log -5 --pretty --oneline // 显示所有提交过的用户，按提交次数排序 git shortlog -sn // 显示指定文件是什么人在什么时候修改过 git blame [file] // 显示暂存区和工作区的差异 git diff // 显示暂存区和上一个 commit 的差异 git diff --cached [file] // 显示暂存区与当前分支最新 commit 之间的差异 git diff HEAD // 显示两次提交之间的差异 git diff [first_branch]...[second_branch] // 显示今天你写了多少行代码 git diff --shortstat &quot;@{0 day ago}&quot; // 显示某次提交的元数据和内容变化 git show [commit] // 显示某次提交发生变化的文件 git show --name-only [commit] // 显示某次提交时，某个文件的内容 git show [commit]:[fileName] // 显示当前分支的最近几次提交 git reflog 八、远程同步// 下载远程仓库的所有变动 git fetch [remote] // 显示所有远程仓库 git remote -v // 显示某个远程仓库的信息 git remote show [remote] // 增加一个新的远程仓库，并命名 git remote add [shortName] [url] // 取回远程仓库的变化，并与本地分支合并 git pull [remote] [branch] // 上传本地指定分支到远程仓库 git push [remote] --force // 推送所有分支到远程仓库 git push [remote] --all 九、撤销// 恢复暂存区的指定文件到工作区 git checkout [file] // 恢复某个 commit 的指定文件到暂存区和工作区 git checkout [commit] [file] // 恢复暂存区的所有文件到工作区 git checkout . // 重置暂存区的指定文件，与上一次 commit 保持一致，但工作区不变 git reset [file] // 重置暂存区和工作区，与上一次的 commit 保持一致 git reset --hard // 重置当iqanefnzhi的指针为指定 commit，同时重置暂存区 git reset [commit] // 重置当前分支的HEAD为指定的 commit，同时重置暂存区和工作区 git reset --hard [commit] // 重置当前HEAD为指定的 commit，但保持暂存区和工作区不变 git rest --keep [commit] // 新建一个 commit，用来撤销指定的 commit // 后者的所有变化都将被前者抵消，并且应用到当前分支 git revert [commit] // 暂时将为提交的变化移除，稍后再移入 git stash git stash pop]]></content>
       <categories>
-          
-          <category> 技术分享 </category>
-          
+        <category>技术分享</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Git </tag>
-            
-        </tags>
-      
-    </entry>
-    
-  
-  
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
 </search>
