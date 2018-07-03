@@ -78,12 +78,14 @@
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: 
+        search: true
     }
 </script>
 
 
-    <script> yiliaConfig.jquery_ui = [false]; </script>
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
 
 
 
@@ -112,6 +114,13 @@
         <p class="header-subtitle">态度决定一切，细节决定成败</p>
         
 
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
         
 
 
@@ -169,7 +178,7 @@
                         
                             <li><a href="/tags/">标签云</a></li>
                         
-                            <li><a href="/about/">关于我</a></li>
+                            <li><a href="/message/">留言板</a></li>
                         
                         </ul>
                     </nav>
@@ -191,7 +200,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/丰衣足食/">丰衣足食</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/你是最棒的/">你是最棒的</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/吃好喝好/">吃好喝好</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/迷失自我/">迷失自我</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a></li></ul>
                     </div>
                 </section>
                 
@@ -214,7 +223,7 @@
                 
                 <section class="switch-part switch-part4">
                 
-                    <div id="js-aboutme">专注于前端</div>
+                    <div id="js-aboutme">专注于iOS</div>
                 </section>
                 
             </div>
@@ -248,7 +257,7 @@
                 
                     <li><a href="/tags/">标签云</a></li>
                 
-                    <li><a href="/about/">关于我</a></li>
+                    <li><a href="/message/">留言板</a></li>
                 
                 <div class="clearfix"></div>
                 </ul>
@@ -271,137 +280,6 @@
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
       <div class="body-wrap">
-  
-    <article id="post-2" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/07/02/2/" class="article-date">
-      <time datetime="2018-07-02T12:52:48.000Z" itemprop="datePublished">2018-07-02</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/02/2/">2</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/life/">生活</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/丰衣足食/">丰衣足食</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/吃好喝好/">吃好喝好</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-1" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/07/02/1/" class="article-date">
-      <time datetime="2018-07-02T12:52:39.000Z" itemprop="datePublished">2018-07-02</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/02/1/">1</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p><excerpt in="" index="" |="" 首页摘要=""><br>+
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/programming/">编程</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/你是最棒的/">你是最棒的</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/迷失自我/">迷失自我</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2018/07/02/1/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
   
     <article id="post-你好，世界" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -426,6 +304,26 @@
     </h1>
   
 
+        
+           <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">0字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">1分</span>
+      </span>
+    </span>
+</div>
+        
       </header>
       
     
@@ -447,6 +345,7 @@
     </div>
     
   </div>
+  
   
 </article>
 
@@ -482,6 +381,26 @@
     </h1>
   
 
+        
+           <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">0字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">1分</span>
+      </span>
+    </span>
+</div>
+        
       </header>
       
     
@@ -507,6 +426,7 @@
     </div>
     
   </div>
+  
   
 </article>
 
@@ -542,6 +462,26 @@
     </h1>
   
 
+        
+           <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">78字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">1分</span>
+      </span>
+    </span>
+</div>
+        
       </header>
       
     
@@ -571,6 +511,105 @@
     </div>
     
   </div>
+  
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-Git-命令小结" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/10/10/Git-命令小结/" class="article-date">
+      <time datetime="2017-10-10T12:46:25.000Z" itemprop="datePublished">2017-10-10</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/10/Git-命令小结/">Git-命令小结</a>
+    </h1>
+  
+
+        
+           <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">1,423字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">6分</span>
+      </span>
+    </span>
+</div>
+        
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <blockquote>
+<p>数据来源于网络，仅供平时查询使用</p>
+</blockquote>
+<h2 id="一、新建代码库"><a href="#一、新建代码库" class="headerlink" title="一、新建代码库"></a>一、新建代码库</h2><pre><code>// 在当前目录新建一个 Git 代码库
+git init
+// 新建一个目录，将其初始化为 Git 代码库
+git init [project-name]
+// 下载一个项目
+git clone [project-url]
+</code></pre>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/技术分享/">技术分享</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/">Git</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2017/10/10/Git-命令小结/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
   
 </article>
 
@@ -670,6 +709,8 @@
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
+
+
   </div>
 </body>
 </html>
