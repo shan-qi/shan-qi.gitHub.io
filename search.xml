@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[你好，世界]]></title>
-    <url>%2F2018%2F07%2F02%2F%E4%BD%A0%E5%A5%BD%EF%BC%8C%E4%B8%96%E7%95%8C%2F</url>
-    <content type="text"><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[我的第一篇博客]]></title>
-    <url>%2F2018%2F07%2F02%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%2F</url>
-    <content type="text"><![CDATA[+]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2018%2F07%2F02%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[程序员必备软件(持续更新中...)]]></title>
+    <url>%2F2018%2F03%2F17%2F%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[前言程序员的任务就是开发，那开发自然少不了一些软件的帮助，那么有哪些软件是开发必须的或者是一定程度上提高开发效率的呢？ 接下来就会介绍一下我自己电脑上必备的软件和使用教程(有些自己写的，也有是别人写的)。本篇文章主要针对 Mac 的用户，当然介绍的软件也有 windows 版本，就麻烦看客自行上网搜索吧。 先展示一下我电脑上的软件截图： 或许你也有相同的软件，那么就请你忽略这些。上面的软件大部分我都有安装包，如果有需要的请私聊我获取软件的资源，毕竟一些破解的不方便给出，还请见谅。 提高效率软件Typora 一款集 编辑预览 于一身的 MarkDown 编辑器，界面简洁，功能强大，操作简单。 教程入口 iPic Mac 上非常好用的图床神器，配合着 Typora 可以大大提高写博客的效率。 Windows 上有对应的 MPic。 教程入口 LICEcap 一款 操作简单、功能强大、性能卓越 的屏幕 GIF 录制工具软件。 教程入口 必备软件Android Studio 这可是吃饭的软件，我是一名 Android 程序的开发者，自然少不了。 教程入口 Intellij IDEA 这个一般作为我巩固 Java 基础或是学习后端的软件。 教程入口1 教程入口2 PyCharm Python 的开发工具。 教程入口 网易云音乐 这个不用多说吧，程序员和音乐更配哦，最近网易云不少音乐的版权要了回来，更加的爱它了。 Latern 额…你懂得，输入我的邀请码 57QP4H 来获得三个月的蓝灯专业版！立即下载 。不需要的可以忽视。 未完待续…]]></content>
+      <categories>
+        <category>程序员必备软件</category>
+      </categories>
+      <tags>
+        <tag>工具软件</tag>
+        <tag>提高效率</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Git-命令小结]]></title>
