@@ -25,21 +25,27 @@
 
 
 
-    
-    
 
-
-<meta name="description" content="ShanQi | iOS | Swift | 移动">
-<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小琦的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="Mac连接数据库1.安装好[mysql][https://dev.mysql.com/downloads/mysql/]和[java][https://www.cnblogs.com/xqx-qyy/p/7659805.html]，安装成功后打开系统偏好设置，下面会看到![A6AB296D-392B-4FAF-A176-98EA13D10A8F](/Users/shan-qi/Desktop/Ma">
+<meta name="keywords" content="JDBC">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac连接使用JDBC">
+<meta property="og:url" content="http://yoursite.com/2018/07/11/Mac连接数据库/index.html">
 <meta property="og:site_name" content="小琦的博客">
-<meta property="og:description" content="ShanQi | iOS | Swift | 移动">
+<meta property="og:description" content="Mac连接数据库1.安装好[mysql][https://dev.mysql.com/downloads/mysql/]和[java][https://www.cnblogs.com/xqx-qyy/p/7659805.html]，安装成功后打开系统偏好设置，下面会看到![A6AB296D-392B-4FAF-A176-98EA13D10A8F](/Users/shan-qi/Desktop/Ma">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/Users/shan-qi/Desktop/Mac连接JDBC-图片/0D357087-CD66-4C4C-B2AE-5D1D6C894E57.jpeg">
+<meta property="og:image" content="http://yoursite.com/Users/shan-qi/Desktop/Mac连接JDBC-图片/942DDA5B-2828-49A6-8F1E-EE94A9FEEC67.png">
+<meta property="og:image" content="http://yoursite.com/Users/shan-qi/Desktop/Mac连接JDBC-图片/1DFF4E6F-412A-4972-BC57-260B570167BE.png">
+<meta property="og:image" content="http://yoursite.com/Users/shan-qi/Desktop/Mac连接JDBC-图片/043C5217-E192-48A5-92B6-1472E7EDCC05.png">
+<meta property="og:image" content="http://yoursite.com/Users/shan-qi/Desktop/Mac连接JDBC-图片/7032E40B-4570-4FC9-B988-994A574639C6.png">
+<meta property="og:image" content="http://yoursite.com/Users/shan-qi/Desktop/Mac连接JDBC-图片/3CB667F1-149D-45C5-BED9-C7957993623D.png">
+<meta property="og:image" content="http://yoursite.com/Users/shan-qi/Desktop/Mac连接JDBC-图片/86F81854-4EB1-44FF-9DB2-87757D71F4EC.png">
+<meta property="og:updated_time" content="2018-07-11T08:11:54.936Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小琦的博客">
-<meta name="twitter:description" content="ShanQi | iOS | Swift | 移动">
+<meta name="twitter:title" content="Mac连接使用JDBC">
+<meta name="twitter:description" content="Mac连接数据库1.安装好[mysql][https://dev.mysql.com/downloads/mysql/]和[java][https://www.cnblogs.com/xqx-qyy/p/7659805.html]，安装成功后打开系统偏好设置，下面会看到![A6AB296D-392B-4FAF-A176-98EA13D10A8F](/Users/shan-qi/Desktop/Ma">
+<meta name="twitter:image" content="http://yoursite.com/Users/shan-qi/Desktop/Mac连接JDBC-图片/0D357087-CD66-4C4C-B2AE-5D1D6C894E57.jpeg">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -67,13 +73,11 @@
 <link rel="stylesheet" href="/css/style.css">
 
 
-    <style> .article { opacity: 0;} </style>
-
 
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>小琦的博客</title>
+<title>Mac连接使用JDBC | 小琦的博客</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -82,8 +86,8 @@
     var yiliaConfig = {
         fancybox: true,
         animate: true,
-        isHome: true,
-        isPost: false,
+        isHome: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -298,9 +302,7 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-Mac连接数据库" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Mac连接数据库" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2018/07/11/Mac连接数据库/" class="article-date">
@@ -318,8 +320,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/11/Mac连接数据库/">Mac连接使用JDBC</a>
+    <h1 class="article-title" itemprop="name">
+      Mac连接使用JDBC
     </h1>
   
 
@@ -344,6 +346,25 @@
 </div>
         
       </header>
+      
+      <div class="article-info article-info-post">
+        
+          <br>
+          <br>
+        
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/JAVA/">JAVA</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JDBC/">JDBC</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -474,403 +495,111 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/JAVA/">JAVA</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JDBC/">JDBC</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
   
-
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-HTML和CSS" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/07/08/HTML和CSS/" class="article-date">
-      <time datetime="2018-07-08T06:55:12.000Z" itemprop="datePublished">2018-07-08</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/08/HTML和CSS/">JAVA-HTML&amp;CSS</a>
-    </h1>
-  
-
-        
-           <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">931字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">4分</span>
-      </span>
-    </span>
-</div>
-        
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <blockquote>
-<p>数据来源于网络，仅供平时查询使用</p>
-</blockquote>
-<h2 id="一、HTML语言基本介绍"><a href="#一、HTML语言基本介绍" class="headerlink" title="一、HTML语言基本介绍"></a>一、HTML语言基本介绍</h2><h3 id="1-基本结构"><a href="#1-基本结构" class="headerlink" title="1.基本结构"></a>1.基本结构</h3><pre><code>&lt;html&gt;&lt;!--根标签--&gt;
-    &lt;head&gt;&lt;!--网页头部（用于设计网页属性--&gt;
-        &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;!--定义文本信息--&gt;
-        &lt;title&gt;哈哈哈 &lt;!--网页的名字--&gt;&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        小琦    &lt;!--主题部分(编辑区网页显示的内容部分)--&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/JAVA/">JAVA</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2018/07/08/HTML和CSS/#more">阅读全文 >></a>
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/07/11/Mac连接数据库/">Mac连接使用JDBC</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">小琦</a></p>
+        <p><span>发布时间:</span>2018-07-11, 15:55:12</p>
+        <p><span>最后更新:</span>2018-07-11, 16:11:54</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/07/11/Mac连接数据库/" title="Mac连接使用JDBC">http://yoursite.com/2018/07/11/Mac连接数据库/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/07/11/Mac连接数据库/　　作者: 小琦" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/07/02/hello-world/" class="article-date">
-      <time datetime="2018-07-02T07:32:28.730Z" itemprop="datePublished">2018-07-02</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/02/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-           <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">78字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
-      </span>
-    </span>
-</div>
-        
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-程序员必备软件" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/03/17/程序员必备软件/" class="article-date">
-      <time datetime="2018-03-17T10:55:12.000Z" itemprop="datePublished">2018-03-17</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/17/程序员必备软件/">程序员必备软件(持续更新中...)</a>
-    </h1>
-  
-
-        
-           <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">478字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">2分</span>
-      </span>
-    </span>
-</div>
-        
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>程序员的任务就是开发，那开发自然少不了一些软件的帮助，那么有哪些软件是开发必须的或者是一定程度上提高开发效率的呢？</p>
-<p>接下来就会介绍一下我自己电脑上必备的软件和<strong>使用教程</strong>(有些自己写的，也有是别人写的)。本篇文章主要针对 <code>Mac</code> 的用户，当然介绍的软件也有 <code>windows</code> 版本，就麻烦看客自行上网搜索吧。</p>
-<p>先展示一下我电脑上的软件截图：</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/程序员必备软件/">程序员必备软件</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具软件/">工具软件</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/提高效率/">提高效率</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2018/03/17/程序员必备软件/#more">阅读全文 >></a>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
         </p>
-      
-      <div class="clearfix"></div>
     </div>
-    
-  </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2018/07/08/HTML和CSS/">
+                    JAVA-HTML&amp;CSS
+                </a>
+            </div>
+        
+    </nav>
+
   
 
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Git-命令小结" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/10/10/Git-命令小结/" class="article-date">
-      <time datetime="2017-10-10T12:46:25.000Z" itemprop="datePublished">2017-10-10</time>
-</a>
-
-
+  <! -- 添加捐赠图标 -->
+<div class ="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏"></a>
+        <span class="donate_txt">
+           &uarr;<br>
+       无以生计，卖文芶延
+        </span>
+        <br>
+      </div>  
+  <div id="donate_guide" class="donate_bar center hidden" >
+    <!-- 支付宝打赏图案 -->
+    <img src="/img/alipay.jpg" alt="支付宝打赏"> 
+    <!-- 微信打赏图案 -->
+    <img src="/img/weixin.jpg" alt="微信打赏">  
     </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/10/Git-命令小结/">Git-命令小结</a>
-    </h1>
-  
-
-        
-           <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">1,423字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">6分</span>
-      </span>
-    </span>
+  <script type="text/javascript">
+    document.getElementById('btn_donate').onclick = function(){
+      $('#donate_board').addClass('hidden');
+      $('#donate_guide').removeClass('hidden');
+    }
+  </script>
 </div>
-        
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <blockquote>
-<p>数据来源于网络，仅供平时查询使用</p>
-</blockquote>
-<h2 id="一、新建代码库"><a href="#一、新建代码库" class="headerlink" title="一、新建代码库"></a>一、新建代码库</h2><pre><code>// 在当前目录新建一个 Git 代码库
-git init
-// 新建一个目录，将其初始化为 Git 代码库
-git init [project-name]
-// 下载一个项目
-git clone [project-url]
-</code></pre>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/技术分享/">技术分享</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/">Git</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2017/10/10/Git-命令小结/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
+<! -- 添加捐赠图标 -->
 
 </article>
 
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Mac连接数据库"><span class="toc-number">1.</span> <span class="toc-text">Mac连接数据库</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"Mac连接使用JDBC　| 小琦的博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
 
 
 
@@ -878,9 +607,52 @@ git clone [project-url]
 
 
 
+        
+      <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zNzc4NS8xNDMxNg==">
+  <script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
 
-  
-  
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+  </script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2018/07/08/HTML和CSS/" title="下一篇: JAVA-HTML&amp;CSS">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/07/11/Mac连接数据库/">Mac连接使用JDBC</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/08/HTML和CSS/">JAVA-HTML&CSS</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/02/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/17/程序员必备软件/">程序员必备软件(持续更新中...)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/10/Git-命令小结/">Git-命令小结</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       
 <footer id="footer">
