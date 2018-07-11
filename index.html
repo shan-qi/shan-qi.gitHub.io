@@ -329,7 +329,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">891字</span>
+        <span class="post-count">878字</span>
       </span>
     </span>
 
@@ -349,128 +349,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h3 id="Mac连接数据库"><a href="#Mac连接数据库" class="headerlink" title="Mac连接数据库"></a>Mac连接数据库</h3><p><strong>1.</strong>安装好[mysql][<a href="https://dev.mysql.com/downloads/mysql/]和[java][https://www.cnblogs.com/xqx-qyy/p/7659805.html]，安装成功后打开系统偏好设置，下面会看到![A6AB296D-392B-4FAF-A176-98EA13D10A8F](/Users/shan-qi/Desktop/Mac连接JDBC-图片/A6AB296D-392B-4FAF-A176-98EA13D10A8F.jpeg)，mysql安装成功后打开命令行，输入**mysql.server" target="_blank" rel="noopener">https://dev.mysql.com/downloads/mysql/]和[java][https://www.cnblogs.com/xqx-qyy/p/7659805.html]，安装成功后打开系统偏好设置，下面会看到![A6AB296D-392B-4FAF-A176-98EA13D10A8F](/Users/shan-qi/Desktop/Mac连接JDBC-图片/A6AB296D-392B-4FAF-A176-98EA13D10A8F.jpeg)，mysql安装成功后打开命令行，输入**mysql.server</a> start**即可打开数据库。</p>
-<p><strong>2.</strong>下载mysql的[jar][<a href="https://dev.mysql.com/downloads/connector/j/5.1.html]包，然后在工程里引入jar包，右键单击工程，==buildPath—&gt;Configure" target="_blank" rel="noopener">https://dev.mysql.com/downloads/connector/j/5.1.html]包，然后在工程里引入jar包，右键单击工程，==buildPath—&gt;Configure</a> BuildPath，选择右上角的Libraries==。</p>
-<p><img src="/Users/shan-qi/Desktop/Mac连接JDBC-图片/0D357087-CD66-4C4C-B2AE-5D1D6C894E57.jpeg" alt="0D357087-CD66-4C4C-B2AE-5D1D6C894E57">.</p>
-<p><img src="/Users/shan-qi/Desktop/Mac连接JDBC-图片/942DDA5B-2828-49A6-8F1E-EE94A9FEEC67.png" alt="942DDA5B-2828-49A6-8F1E-EE94A9FEEC67"></p>
-<p><img src="/Users/shan-qi/Desktop/Mac连接JDBC-图片/1DFF4E6F-412A-4972-BC57-260B570167BE.png" alt="1DFF4E6F-412A-4972-BC57-260B570167BE"></p>
-<hr>
-<p><strong>3.</strong>数据包准备(下<u>Navicat</u>,[网盘][<a href="https://pan.baidu.com/s/1EZ6-xbn7KInEKCKV57JmDw],提取密码:x6b6" target="_blank" rel="noopener">https://pan.baidu.com/s/1EZ6-xbn7KInEKCKV57JmDw],提取密码:x6b6</a>)</p>
-<p>​    3.1 在数据库==test==中创建==Par==t表</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE `Part` (</span><br><span class="line">  `partkey` int(11) NOT NULL,</span><br><span class="line">  `name` varchar(55) COLLATE gbk_bin DEFAULT NULL,</span><br><span class="line">  `mfgr` char(25) COLLATE gbk_bin DEFAULT NULL,</span><br><span class="line">  `type` varchar(25) COLLATE gbk_bin DEFAULT NULL,</span><br><span class="line">  `size` int(11) DEFAULT NULL,</span><br><span class="line">  `retailprice` double DEFAULT NULL,</span><br><span class="line">  PRIMARY KEY (`partkey`)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<p>​     3.2 添加如下数据</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">partkey</th>
-<th style="text-align:left">Name</th>
-<th>mfgr</th>
-<th>type</th>
-<th>size</th>
-<th>retailprice</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">1</td>
-<td style="text-align:left">螺旋桨</td>
-<td>浙大</td>
-<td>散</td>
-<td>10</td>
-<td>1000</td>
-</tr>
-<tr>
-<td style="text-align:left">2</td>
-<td style="text-align:left">推进器</td>
-<td>海大</td>
-<td>整</td>
-<td>20</td>
-<td>2000</td>
-</tr>
-<tr>
-<td style="text-align:left">3</td>
-<td style="text-align:left">船舶模拟驾驶舱</td>
-<td>海大</td>
-<td>整</td>
-<td>30</td>
-<td>4000</td>
-</tr>
-<tr>
-<td style="text-align:left">4</td>
-<td style="text-align:left">南航</td>
-<td>航天</td>
-<td>散</td>
-<td>20</td>
-<td>2000</td>
-</tr>
-<tr>
-<td style="text-align:left">5</td>
-<td style="text-align:left">螺旋剑</td>
-<td>浙大</td>
-<td>散</td>
-<td>10</td>
-<td>1000</td>
-</tr>
-<tr>
-<td style="text-align:left">6</td>
-<td style="text-align:left">推进器</td>
-<td>海大</td>
-<td>整</td>
-<td>20</td>
-<td>2000</td>
-</tr>
-</tbody>
-</table>
-<p><strong>4.</strong>    JDBC的开发步骤</p>
-<ol>
-<li><p>引入JDBC驱动器jar包</p>
-</li>
-<li><p>在程序中引入JDBC驱动器类</p>
-</li>
-<li><p>创建java程序跟数据库的连接</p>
-</li>
-<li><p>跟数据库交互:发送sql语句，接收数据库对sql语句的执行结果</p>
-</li>
-<li><p>解析执行结果</p>
-<hr>
-<p>连接并读取数据库</p>
-<ul>
-<li>数据库名称:test</li>
-<li>数据包名称:Part</li>
-<li>端口号:3306</li>
-<li>用户名:root</li>
-<li>密码:root</li>
-</ul>
-</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.sql.DriverManager;</span><br><span class="line"><span class="keyword">import</span> java.sql.ResultSet;</span><br><span class="line"><span class="keyword">import</span> java.sql.SQLException;</span><br><span class="line"><span class="keyword">import</span> com.mysql.jdbc.Connection;</span><br><span class="line"><span class="keyword">import</span> com.mysql.jdbc.Statement;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test6</span> </span>&#123;</span><br><span class="line">	<span class="keyword">static</span> &#123;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			Class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line">		&#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">			<span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Connection <span class="title">getConnection</span><span class="params">()</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> (Connection) DriverManager.getConnection(<span class="string">"jdbc:mysql://localhost:3306/test?useSSL=false&amp;user=root&amp;password=XQ3720xq&amp;useUnicode=true&amp;characterEncoding=utf-8"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">free</span><span class="params">(Connection conn,Statement st,ResultSet rs)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(rs != <span class="keyword">null</span>) &#123;</span><br><span class="line">			<span class="keyword">try</span> &#123;</span><br><span class="line">				rs.close();</span><br><span class="line">			&#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">				<span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">				e.printStackTrace();</span><br><span class="line">			&#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">				<span class="keyword">if</span>(st != <span class="keyword">null</span>) &#123;</span><br><span class="line">					<span class="keyword">try</span> &#123;</span><br><span class="line">						st.close();</span><br><span class="line">					&#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">						<span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">						e.printStackTrace();</span><br><span class="line">					&#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">						<span class="keyword">if</span>(conn != <span class="keyword">null</span>) &#123;</span><br><span class="line">							<span class="keyword">try</span> &#123;</span><br><span class="line">								conn.close();</span><br><span class="line">							&#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">								<span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">								e.printStackTrace();</span><br><span class="line">							&#125;</span><br><span class="line">						&#125;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<hr>
-<p> <strong>5</strong> 增、删、改、查。==（注意释放资源）==</p>
-<ul>
-<li>增加数据</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//批量增加sql语句</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insertBatch</span><span class="params">()</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">		Connection conn = Test6.getConnection();</span><br><span class="line">		conn.setAutoCommit(<span class="keyword">false</span>);<span class="comment">//禁止提交</span></span><br><span class="line">		String sql = <span class="string">"insert into Part values (?,?,?,?,?,?)"</span>;</span><br><span class="line">		PreparedStatement ps = (PreparedStatement)conn.prepareStatement(sql);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">7</span>;i&lt;=<span class="number">8</span>;i++) &#123;</span><br><span class="line">			ps.setInt(<span class="number">1</span>,i);</span><br><span class="line">			ps.setString(<span class="number">2</span>, <span class="string">"船舶模拟驾驶舱"</span>+i);</span><br><span class="line">			ps.setString(<span class="number">3</span>, <span class="string">"海大"</span>+i);</span><br><span class="line">			ps.setString(<span class="number">4</span>, <span class="string">"整"</span>+i);</span><br><span class="line">			ps.setInt(<span class="number">5</span>, <span class="number">40</span>);</span><br><span class="line">			ps.setDouble(<span class="number">6</span>, <span class="number">3000.0</span>);</span><br><span class="line">			ps.addBatch();</span><br><span class="line">		&#125;</span><br><span class="line">		ps.executeBatch();</span><br><span class="line">		conn.commit();<span class="comment">//提交</span></span><br><span class="line">		Test6.free(conn, ps, <span class="keyword">null</span>);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-<p>​    运行结果:</p>
-<p><img src="/Users/shan-qi/Desktop/Mac连接JDBC-图片/043C5217-E192-48A5-92B6-1472E7EDCC05.png" alt="043C5217-E192-48A5-92B6-1472E7EDCC05"></p>
-<ul>
-<li>删除数据</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//批量删除sql语句</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">deleteBatch</span><span class="params">()</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">		Connection conn = Test6.getConnection();</span><br><span class="line">		conn.setAutoCommit(<span class="keyword">false</span>);</span><br><span class="line">		String sql = <span class="string">"delete from Part where partkey = ?"</span>;</span><br><span class="line">		PreparedStatement ps = (PreparedStatement)conn.prepareStatement(sql);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">7</span>;i&lt;=<span class="number">9</span>;i++) &#123;</span><br><span class="line">			ps.setInt(<span class="number">1</span>, i);</span><br><span class="line">			ps.addBatch();</span><br><span class="line">		&#125;</span><br><span class="line">		ps.executeBatch();</span><br><span class="line">		conn.commit();</span><br><span class="line">		Test6.free(conn, ps, <span class="keyword">null</span>);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-<p>​    运行结果:</p>
-<p><img src="/Users/shan-qi/Desktop/Mac连接JDBC-图片/7032E40B-4570-4FC9-B988-994A574639C6.png" alt="7032E40B-4570-4FC9-B988-994A574639C6"></p>
-<ul>
-<li>修改数据</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//批量修改sql语句</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">updateBatch</span><span class="params">()</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">		Connection conn = Test6.getConnection();</span><br><span class="line">		conn.setAutoCommit(<span class="keyword">false</span>);</span><br><span class="line">		String sql = <span class="string">"update Part set name =?where partkey=?"</span>;</span><br><span class="line">		PreparedStatement ps = (PreparedStatement)conn.prepareStatement(sql);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">6</span>;i++) &#123;</span><br><span class="line">			ps.setString(<span class="number">1</span>, <span class="string">"航天"</span>+i);</span><br><span class="line">			ps.setInt(<span class="number">2</span>, i);</span><br><span class="line">			ps.addBatch();</span><br><span class="line">		&#125;</span><br><span class="line">	</span><br><span class="line">		ps.executeBatch();</span><br><span class="line">		conn.commit();</span><br><span class="line">		Test6.free(conn, ps, <span class="keyword">null</span>);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-<p>​    运行结果:</p>
-<p><img src="/Users/shan-qi/Desktop/Mac连接JDBC-图片/3CB667F1-149D-45C5-BED9-C7957993623D.png" alt="3CB667F1-149D-45C5-BED9-C7957993623D"></p>
-<ul>
-<li>查找数据</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询sql语句</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">queryAll</span><span class="params">(String sql)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">		Connection conn = Test6.getConnection();</span><br><span class="line">		Statement st = (Statement)conn.createStatement();</span><br><span class="line">		ResultSet rs = st.executeQuery(sql);</span><br><span class="line">		<span class="keyword">while</span>(rs.next()) &#123;</span><br><span class="line">			System.out.println(rs.getString(<span class="string">"name"</span>));</span><br><span class="line">		&#125;</span><br><span class="line">		Test6.free(conn, st, rs);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-<p>​    运行结果:</p>
-<p><img src="/Users/shan-qi/Desktop/Mac连接JDBC-图片/86F81854-4EB1-44FF-9DB2-87757D71F4EC.png" alt="86F81854-4EB1-44FF-9DB2-87757D71F4EC"></p>
-
+              <h3 id="Mac连接数据库"><a href="#Mac连接数据库" class="headerlink" title="Mac连接数据库"></a>Mac连接数据库</h3><p><strong>1.</strong>安装好[mysql][<a href="https://dev.mysql.com/downloads/mysql/]和[java][https://www.cnblogs.com/xqx-qyy/p/7659805.html]，安装成功后打开系统偏好设置，下面会看到![](https://ws3.sinaimg.cn/large/006tNc79gy1ft5zwomvx9j301e01f0kg.jpg)，mysql安装成功后打开命令行，输入**mysql.server" target="_blank" rel="noopener">https://dev.mysql.com/downloads/mysql/]和[java][https://www.cnblogs.com/xqx-qyy/p/7659805.html]，安装成功后打开系统偏好设置，下面会看到![](https://ws3.sinaimg.cn/large/006tNc79gy1ft5zwomvx9j301e01f0kg.jpg)，mysql安装成功后打开命令行，输入**mysql.server</a> start<strong>即可打开数据库。<br>
+          
       
     </div>
     
@@ -487,6 +367,10 @@
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JDBC/">JDBC</a></li></ul>
     </div>
 
+      
+        <p class="article-more-link">
+          <a href="/2018/07/11/Mac连接数据库/#more">阅读全文 >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
