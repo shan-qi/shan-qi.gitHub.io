@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-11T08:39:04.526Z</updated>
+  <updated>2018-07-11T08:42:57.181Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="http://yoursite.com/2018/07/11/Mac%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     <id>http://yoursite.com/2018/07/11/Mac连接数据库/</id>
     <published>2018-07-11T07:55:12.000Z</published>
-    <updated>2018-07-11T08:39:04.526Z</updated>
+    <updated>2018-07-11T08:42:57.181Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;Mac连接数据库&quot;&gt;&lt;a href=&quot;#Mac连接数据库&quot; class=&quot;headerlink&quot; title=&quot;==Mac连接数据库==&quot;&gt;&lt;/a&gt;==Mac连接数据库==&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt;安装好&lt;a href=&quot;https://dev.mysql.com/downloads/mysql/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;mysql&lt;/a&gt;和&lt;a href=&quot;https://www.cnblogs.com/xqx-qyy/p/7659805.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;java&lt;/a&gt;，安装成功后打开系统偏好设置，下面会看到&lt;img src=&quot;https://ws3.sinaimg.cn/large/006tNc79gy1ft5zwomvx9j301e01f0kg.jpg&quot; alt=&quot;&quot;&gt;，mysql安装成功后打开命令行，输入&lt;strong&gt;mysql.server start&lt;/strong&gt;即可打开数据库。&lt;br&gt;
+      &lt;h3 id=&quot;Mac连接数据库&quot;&gt;&lt;a href=&quot;#Mac连接数据库&quot; class=&quot;headerlink&quot; title=&quot;Mac连接数据库&quot;&gt;&lt;/a&gt;Mac连接数据库&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt;安装好&lt;a href=&quot;https://dev.mysql.com/downloads/mysql/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;mysql&lt;/a&gt;和&lt;a href=&quot;https://www.cnblogs.com/xqx-qyy/p/7659805.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;java&lt;/a&gt;，安装成功后打开系统偏好设置，下面会看到&lt;img src=&quot;https://ws3.sinaimg.cn/large/006tNc79gy1ft5zwomvx9j301e01f0kg.jpg&quot; alt=&quot;&quot;&gt;，mysql安装成功后打开命令行，输入&lt;strong&gt;mysql.server start&lt;/strong&gt;即可打开数据库。&lt;/p&gt;
     
     </summary>
     
