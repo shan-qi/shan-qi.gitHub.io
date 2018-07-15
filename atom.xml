@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-15T08:38:45.518Z</updated>
+  <updated>2018-07-15T08:42:22.083Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Servlet Cookies</title>
+    <link href="http://yoursite.com/2018/07/14/Servlet%20Cookies/"/>
+    <id>http://yoursite.com/2018/07/14/Servlet Cookies/</id>
+    <published>2018-07-14T07:55:12.000Z</published>
+    <updated>2018-07-15T08:42:22.083Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;数据来源于网络，仅供平时查询使用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Servlet-Cookies&quot;&gt;&lt;a href=&quot;#Servlet-Cookies&quot; class=&quot;headerlink&quot; title=&quot;Servlet Cookies&quot;&gt;&lt;/a&gt;Servlet Cookies&lt;/h3&gt;&lt;p&gt;Cookie是在多个客户端请求之间持久存储的一小段信息。&lt;/p&gt;
+&lt;p&gt;Cookie具有名称，单个值和可选属性，例如注释，路径和域限定符，生存周期和版本号。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Servlet" scheme="http://yoursite.com/categories/Servlet/"/>
+    
+    
+      <category term="Cookies" scheme="http://yoursite.com/tags/Cookies/"/>
+    
+  </entry>
   
   <entry>
     <title>Servlet请求转发和重定向</title>
