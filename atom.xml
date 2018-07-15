@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-15T14:00:41.530Z</updated>
+  <updated>2018-07-15T14:54:02.873Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Servlet增删改查</title>
+    <link href="http://yoursite.com/2018/07/15/Servlet%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/"/>
+    <id>http://yoursite.com/2018/07/15/Servlet增删改查/</id>
+    <published>2018-07-15T10:55:12.000Z</published>
+    <updated>2018-07-15T14:54:02.873Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;数据来源于网络，仅供平时查询使用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Servlet增删改查&quot;&gt;&lt;a href=&quot;#Servlet增删改查&quot; class=&quot;headerlink&quot; title=&quot;Servlet增删改查&quot;&gt;&lt;/a&gt;Servlet增删改查&lt;/h2&gt;&lt;p&gt;CRUD(创建，读取，更新和删除)应用程序是任何项目开发的最重要的应用程序。 在Servlet中，我们可以轻松创建CRUD应用程序。&lt;/p&gt;
+&lt;h3 id=&quot;Servlet-CRUD示例&quot;&gt;&lt;a href=&quot;#Servlet-CRUD示例&quot; class=&quot;headerlink&quot; title=&quot;Servlet CRUD示例&quot;&gt;&lt;/a&gt;Servlet CRUD示例&lt;/h3&gt;&lt;p&gt;在MySQL数据库中使用序列自动递增ID创建&lt;code&gt;“employees”&lt;/code&gt;表。这个表中有以下几个字段：&lt;code&gt;id&lt;/code&gt;，&lt;code&gt;name&lt;/code&gt;，&lt;code&gt;age&lt;/code&gt;，&lt;code&gt;address&lt;/code&gt;和&lt;code&gt;salary&lt;/code&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Servlet" scheme="http://yoursite.com/categories/Servlet/"/>
+    
+    
+      <category term="增删改查" scheme="http://yoursite.com/tags/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>Servlet HttpSession登录注销实例</title>
