@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-15T13:50:16.917Z</updated>
+  <updated>2018-07-15T13:56:58.104Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,18 +17,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Servlet登录注销Cookies实例</title>
-    <link href="http://yoursite.com/2018/07/14/Servlet%E7%99%BB%E5%BD%95%E6%B3%A8%E9%94%80Cookies%E5%AE%9E%E4%BE%8B/"/>
-    <id>http://yoursite.com/2018/07/14/Servlet登录注销Cookies实例/</id>
-    <published>2018-07-14T14:24:12.000Z</published>
-    <updated>2018-07-15T13:50:16.917Z</updated>
+    <title>Servlet HttpSession登录注销实例</title>
+    <link href="http://yoursite.com/2018/07/15/Servlet%20HttpSession%E7%99%BB%E5%BD%95%E6%B3%A8%E9%94%80%E5%AE%9E%E4%BE%8B/"/>
+    <id>http://yoursite.com/2018/07/15/Servlet HttpSession登录注销实例/</id>
+    <published>2018-07-15T02:10:12.000Z</published>
+    <updated>2018-07-15T13:56:58.104Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
 &lt;p&gt;数据来源于网络，仅供平时查询使用&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&quot;Servlet登录注销Cookies实例&quot;&gt;&lt;a href=&quot;#Servlet登录注销Cookies实例&quot; class=&quot;headerlink&quot; title=&quot;Servlet登录注销Cookies实例&quot;&gt;&lt;/a&gt;Servlet登录注销Cookies实例&lt;/h3&gt;&lt;p&gt;Cookie是存储在客户端的一种信息技术。&lt;/p&gt;
+&lt;p&gt;我们可以绑定&lt;code&gt;HttpSession&lt;/code&gt;实例上的对象，并使用&lt;code&gt;setAttribute&lt;/code&gt;和&lt;code&gt;getAttribute&lt;/code&gt;方法获取对象的数据信息。&lt;/p&gt;
+&lt;p&gt;在这里，将演示一个在不使用数据库连接的情况下，创建一个真实的登录和注销应用程序。假设有一个用户名是：&lt;code&gt;admin&lt;/code&gt;，它密码是&lt;code&gt;admin123&lt;/code&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Servlet" scheme="http://yoursite.com/categories/Servlet/"/>
+    
+    
+      <category term="登录注销" scheme="http://yoursite.com/tags/%E7%99%BB%E5%BD%95%E6%B3%A8%E9%94%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Servlet登录注销Cookies实例</title>
+    <link href="http://yoursite.com/2018/07/14/Servlet%E7%99%BB%E5%BD%95%E6%B3%A8%E9%94%80Cookies%E5%AE%9E%E4%BE%8B/"/>
+    <id>http://yoursite.com/2018/07/14/Servlet登录注销Cookies实例/</id>
+    <published>2018-07-14T14:24:12.000Z</published>
+    <updated>2018-07-15T13:55:10.832Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;数据来源于网络，仅供平时查询使用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Cookie是存储在客户端的一种信息技术。&lt;/p&gt;
 &lt;p&gt;在这个例子中，我们创建了&lt;code&gt;3&lt;/code&gt;个链接：登录，注销和用户资料。用户在未登录之前不能进入个人资料页面。如果用户已经注销，则需要再次登录才能访问个人资料。&lt;/p&gt;
     
     </summary>
@@ -45,14 +69,14 @@
     <link href="http://yoursite.com/2018/07/14/Servlet%E8%A1%A8%E5%8D%95%E9%9A%90%E8%97%8F%E5%AD%97%E6%AE%B5/"/>
     <id>http://yoursite.com/2018/07/14/Servlet表单隐藏字段/</id>
     <published>2018-07-14T10:55:12.000Z</published>
-    <updated>2018-07-15T13:46:37.437Z</updated>
+    <updated>2018-07-15T13:55:03.749Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
 &lt;p&gt;数据来源于网络，仅供平时查询使用&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&quot;Servlet表单隐藏字段&quot;&gt;&lt;a href=&quot;#Servlet表单隐藏字段&quot; class=&quot;headerlink&quot; title=&quot;Servlet表单隐藏字段&quot;&gt;&lt;/a&gt;Servlet表单隐藏字段&lt;/h3&gt;&lt;p&gt;在隐藏表单字段的情况下，一般使用隐藏(不可见)文本字段来维护用户的状态。&lt;/p&gt;
+&lt;p&gt;在隐藏表单字段的情况下，一般使用隐藏(不可见)文本字段来维护用户的状态。&lt;/p&gt;
 &lt;p&gt;在这种情况下，我们将信息存储在隐藏字段中，并从另一个servlet获取信息。 如果必须在所有页面中提交表单，但不想依赖浏览器，这种方法会更好。&lt;/p&gt;
     
     </summary>
@@ -69,14 +93,14 @@
     <link href="http://yoursite.com/2018/07/14/Servlet%20Cookies/"/>
     <id>http://yoursite.com/2018/07/14/Servlet Cookies/</id>
     <published>2018-07-14T07:55:12.000Z</published>
-    <updated>2018-07-15T08:46:55.923Z</updated>
+    <updated>2018-07-15T13:54:54.657Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
 &lt;p&gt;数据来源于网络，仅供平时查询使用&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&quot;Servlet-Cookies&quot;&gt;&lt;a href=&quot;#Servlet-Cookies&quot; class=&quot;headerlink&quot; title=&quot;Servlet Cookies&quot;&gt;&lt;/a&gt;Servlet Cookies&lt;/h3&gt;&lt;p&gt;Cookie是在多个客户端请求之间持久存储的一小段信息。&lt;/p&gt;
+&lt;p&gt;Cookie是在多个客户端请求之间持久存储的一小段信息。&lt;/p&gt;
 &lt;p&gt;Cookie具有名称，单个值和可选属性，例如注释，路径和域限定符，生存周期和版本号。&lt;/p&gt;
     
     </summary>
@@ -119,14 +143,14 @@
     <link href="http://yoursite.com/2018/07/13/Servlet%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E8%BF%87%E6%BB%A4%E5%99%A8/"/>
     <id>http://yoursite.com/2018/07/13/Servlet身份验证过滤器/</id>
     <published>2018-07-13T10:52:12.000Z</published>
-    <updated>2018-07-15T08:36:10.717Z</updated>
+    <updated>2018-07-15T13:55:21.582Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
 &lt;p&gt;数据来源于网络，仅供平时查询使用&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&quot;Servlet身份验证过滤器&quot;&gt;&lt;a href=&quot;#Servlet身份验证过滤器&quot; class=&quot;headerlink&quot; title=&quot;Servlet身份验证过滤器&quot;&gt;&lt;/a&gt;Servlet身份验证过滤器&lt;/h3&gt;&lt;p&gt;可以在过滤器中执行身份认证。 在这里，我们将如何在过滤器类检查由用户提交的密码，如果给定密码为&lt;code&gt;admin&lt;/code&gt;，它将把请求转发到&lt;code&gt;WelcomeAdmin&lt;/code&gt; servlet，否则会显示错误消息。&lt;/p&gt;
+&lt;p&gt;可以在过滤器中执行身份认证。 在这里，我们将如何在过滤器类检查由用户提交的密码，如果给定密码为&lt;code&gt;admin&lt;/code&gt;，它将把请求转发到&lt;code&gt;WelcomeAdmin&lt;/code&gt; servlet，否则会显示错误消息。&lt;/p&gt;
 &lt;h5 id=&quot;使用过滤器验证用户的示例&quot;&gt;&lt;a href=&quot;#使用过滤器验证用户的示例&quot; class=&quot;headerlink&quot; title=&quot;使用过滤器验证用户的示例&quot;&gt;&lt;/a&gt;使用过滤器验证用户的示例&lt;/h5&gt;
     
     </summary>

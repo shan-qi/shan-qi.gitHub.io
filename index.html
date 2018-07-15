@@ -218,7 +218,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Cookies/">Cookies</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JDBC/">JDBC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具软件/">工具软件</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/提高效率/">提高效率</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生命周期/">生命周期</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/登录注销Cookies/">登录注销Cookies</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/表单隐藏/">表单隐藏</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/请求转发/">请求转发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/身份验证/">身份验证</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/过滤器/">过滤器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/重定向/">重定向</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Cookies/">Cookies</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JDBC/">JDBC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具软件/">工具软件</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/提高效率/">提高效率</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生命周期/">生命周期</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/登录注销/">登录注销</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/登录注销Cookies/">登录注销Cookies</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/表单隐藏/">表单隐藏</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/请求转发/">请求转发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/身份验证/">身份验证</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/过滤器/">过滤器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/重定向/">重定向</a></li></ul>
                     </div>
                 </section>
                 
@@ -300,6 +300,99 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-Servlet HttpSession登录注销实例" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/07/15/Servlet HttpSession登录注销实例/" class="article-date">
+      <time datetime="2018-07-15T02:10:12.000Z" itemprop="datePublished">2018-07-15</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/15/Servlet HttpSession登录注销实例/">Servlet HttpSession登录注销实例</a>
+    </h1>
+  
+
+        
+           <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">1,564字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">8分</span>
+      </span>
+    </span>
+</div>
+        
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <blockquote>
+<p>数据来源于网络，仅供平时查询使用</p>
+</blockquote>
+<p>我们可以绑定<code>HttpSession</code>实例上的对象，并使用<code>setAttribute</code>和<code>getAttribute</code>方法获取对象的数据信息。</p>
+<p>在这里，将演示一个在不使用数据库连接的情况下，创建一个真实的登录和注销应用程序。假设有一个用户名是：<code>admin</code>，它密码是<code>admin123</code>。</p>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Servlet/">Servlet</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/登录注销/">登录注销</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2018/07/15/Servlet HttpSession登录注销实例/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-Servlet登录注销Cookies实例" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -329,7 +422,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">1,356字</span>
+        <span class="post-count">1,349字</span>
       </span>
     </span>
 
@@ -352,7 +445,7 @@
               <blockquote>
 <p>数据来源于网络，仅供平时查询使用</p>
 </blockquote>
-<h3 id="Servlet登录注销Cookies实例"><a href="#Servlet登录注销Cookies实例" class="headerlink" title="Servlet登录注销Cookies实例"></a>Servlet登录注销Cookies实例</h3><p>Cookie是存储在客户端的一种信息技术。</p>
+<p>Cookie是存储在客户端的一种信息技术。</p>
 <p>在这个例子中，我们创建了<code>3</code>个链接：登录，注销和用户资料。用户在未登录之前不能进入个人资料页面。如果用户已经注销，则需要再次登录才能访问个人资料。</p>
           
       
@@ -422,7 +515,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">981字</span>
+        <span class="post-count">974字</span>
       </span>
     </span>
 
@@ -445,7 +538,7 @@
               <blockquote>
 <p>数据来源于网络，仅供平时查询使用</p>
 </blockquote>
-<h3 id="Servlet表单隐藏字段"><a href="#Servlet表单隐藏字段" class="headerlink" title="Servlet表单隐藏字段"></a>Servlet表单隐藏字段</h3><p>在隐藏表单字段的情况下，一般使用隐藏(不可见)文本字段来维护用户的状态。</p>
+<p>在隐藏表单字段的情况下，一般使用隐藏(不可见)文本字段来维护用户的状态。</p>
 <p>在这种情况下，我们将信息存储在隐藏字段中，并从另一个servlet获取信息。 如果必须在所有页面中提交表单，但不想依赖浏览器，这种方法会更好。</p>
           
       
@@ -515,7 +608,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">1,136字</span>
+        <span class="post-count">1,134字</span>
       </span>
     </span>
 
@@ -538,7 +631,7 @@
               <blockquote>
 <p>数据来源于网络，仅供平时查询使用</p>
 </blockquote>
-<h3 id="Servlet-Cookies"><a href="#Servlet-Cookies" class="headerlink" title="Servlet Cookies"></a>Servlet Cookies</h3><p>Cookie是在多个客户端请求之间持久存储的一小段信息。</p>
+<p>Cookie是在多个客户端请求之间持久存储的一小段信息。</p>
 <p>Cookie具有名称，单个值和可选属性，例如注释，路径和域限定符，生存周期和版本号。</p>
           
       
@@ -701,7 +794,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">802字</span>
+        <span class="post-count">794字</span>
       </span>
     </span>
 
@@ -724,7 +817,7 @@
               <blockquote>
 <p>数据来源于网络，仅供平时查询使用</p>
 </blockquote>
-<h3 id="Servlet身份验证过滤器"><a href="#Servlet身份验证过滤器" class="headerlink" title="Servlet身份验证过滤器"></a>Servlet身份验证过滤器</h3><p>可以在过滤器中执行身份认证。 在这里，我们将如何在过滤器类检查由用户提交的密码，如果给定密码为<code>admin</code>，它将把请求转发到<code>WelcomeAdmin</code> servlet，否则会显示错误消息。</p>
+<p>可以在过滤器中执行身份认证。 在这里，我们将如何在过滤器类检查由用户提交的密码，如果给定密码为<code>admin</code>，它将把请求转发到<code>WelcomeAdmin</code> servlet，否则会显示错误消息。</p>
 <h5 id="使用过滤器验证用户的示例"><a href="#使用过滤器验证用户的示例" class="headerlink" title="使用过滤器验证用户的示例"></a>使用过滤器验证用户的示例</h5>
           
       
@@ -1145,104 +1238,10 @@
 
 
   
-    <article id="post-Git-命令小结" class="article article-type-post" itemscope itemprop="blogPost">
   
-    <div class="article-meta">
-      <a href="/2017/10/10/Git-命令小结/" class="article-date">
-      <time datetime="2017-10-10T12:46:25.000Z" itemprop="datePublished">2017-10-10</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/10/Git-命令小结/">Git-命令小结</a>
-    </h1>
-  
-
-        
-           <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">1,423字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">6分</span>
-      </span>
-    </span>
-</div>
-        
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <blockquote>
-<p>数据来源于网络，仅供平时查询使用</p>
-</blockquote>
-<h2 id="一、新建代码库"><a href="#一、新建代码库" class="headerlink" title="一、新建代码库"></a>一、新建代码库</h2><pre><code>// 在当前目录新建一个 Git 代码库
-git init
-// 新建一个目录，将其初始化为 Git 代码库
-git init [project-name]
-// 下载一个项目
-git clone [project-url]
-</code></pre>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/技术分享/">技术分享</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/">Git</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2017/10/10/Git-命令小结/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-
-</article>
-
-
-
-
-
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 </div>
       
@@ -1273,7 +1272,7 @@ git clone [project-url]
                     </span>
                 
                 <span>| </span>
-                <span class="post-count">  已经写了 8.8k 字啦</span>
+                <span class="post-count">  已经写了 10.3k 字啦</span>
             </div>
         
         </br>
