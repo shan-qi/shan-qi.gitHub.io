@@ -34,17 +34,16 @@
 <meta property="og:site_name" content="小琦的博客">
 <meta property="og:description" content="数据来源于网络，仅供平时查询使用  Servlet CookiesCookie是在多个客户端请求之间持久存储的一小段信息。 Cookie具有名称，单个值和可选属性，例如注释，路径和域限定符，生存周期和版本号。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tKfTcgy1ftalyk2oqnj30de04adft.jpg">
 <meta property="og:image" content="https://ws2.sinaimg.cn/large/006tKfTcgy1ftam23cv5sj30gq082wei.jpg">
 <meta property="og:image" content="https://ws2.sinaimg.cn/large/006tKfTcgy1ftam2naengj30go0fy74v.jpg">
 <meta property="og:image" content="https://ws3.sinaimg.cn/large/006tKfTcgy1ftam69jah5j30vq03eglg.jpg">
 <meta property="og:image" content="https://ws3.sinaimg.cn/large/006tKfTcgy1ftam6gkw78j30tu06uglu.jpg">
 <meta property="og:image" content="https://ws4.sinaimg.cn/large/006tKfTcgy1ftam71zp0ej30x8082jr7.jpg">
-<meta property="og:updated_time" content="2018-07-15T08:42:22.083Z">
+<meta property="og:updated_time" content="2018-07-15T08:46:55.923Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Servlet Cookies">
 <meta name="twitter:description" content="数据来源于网络，仅供平时查询使用  Servlet CookiesCookie是在多个客户端请求之间持久存储的一小段信息。 Cookie具有名称，单个值和可选属性，例如注释，路径和域限定符，生存周期和版本号。">
-<meta name="twitter:image" content="https://ws4.sinaimg.cn/large/006tKfTcgy1ftalyk2oqnj30de04adft.jpg">
+<meta name="twitter:image" content="https://ws2.sinaimg.cn/large/006tKfTcgy1ftam23cv5sj30gq082wei.jpg">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -375,37 +374,27 @@
 <h3 id="Servlet-Cookies"><a href="#Servlet-Cookies" class="headerlink" title="Servlet Cookies"></a>Servlet Cookies</h3><p>Cookie是在多个客户端请求之间持久存储的一小段信息。</p>
 <p>Cookie具有名称，单个值和可选属性，例如注释，路径和域限定符，生存周期和版本号。</p>
 <a id="more"></a>  
-<h4 id="Cookie工作原理"><a href="#Cookie工作原理" class="headerlink" title="Cookie工作原理"></a>Cookie工作原理</h4><hr>
-<p>默认情况下，每个请求都被视为新的请求。在cookie技术中，servlet响应可以添加cookie。 所以cookie存储在浏览器的缓存中。之后，如果用户发出请求，默认情况下会带上cookie。 因此，我们就可以知道用户旧用户。</p>
-<p><img src="https://ws4.sinaimg.cn/large/006tKfTcgy1ftalyk2oqnj30de04adft.jpg" alt=""></p>
-<h4 id="Cookie类型"><a href="#Cookie类型" class="headerlink" title="Cookie类型"></a>Cookie类型</h4><hr>
-<p>Servlet中有<code>2</code>种类型的Cookie。</p>
+<h4 id="Cookie工作原理"><a href="#Cookie工作原理" class="headerlink" title="Cookie工作原理"></a>Cookie工作原理</h4><p>默认情况下，每个请求都被视为新的请求。在cookie技术中，servlet响应可以添加cookie。 所以cookie存储在浏览器的缓存中。之后，如果用户发出请求，默认情况下会带上cookie。 因此，我们就可以知道用户旧用户。</p>
+<h4 id="Cookie类型"><a href="#Cookie类型" class="headerlink" title="Cookie类型"></a>Cookie类型</h4><p>Servlet中有<code>2</code>种类型的Cookie。</p>
 <ul>
 <li>非持久性cookie</li>
 <li>持久性Cookie</li>
 </ul>
-<p><strong>非持久性cookie</strong></p>
-<ul>
+<h5 id="非持久性cookie"><a href="#非持久性cookie" class="headerlink" title="非持久性cookie"></a><strong>非持久性cookie</strong></h5><ul>
 <li>它仅适用于单个会话。当用户关闭浏览器时都会删除它。</li>
 </ul>
-<p><strong>持久性Cookie</strong></p>
-<ul>
+<h5 id="持久性Cookie"><a href="#持久性Cookie" class="headerlink" title="持久性Cookie"></a><strong>持久性Cookie</strong></h5><ul>
 <li>它对多个会话有效。当用户关闭浏览器时也不会删除它。只有在用户注销或注销时才被删除。</li>
 </ul>
-<h4 id="Cookie的优点"><a href="#Cookie的优点" class="headerlink" title="Cookie的优点"></a>Cookie的优点</h4><hr>
-<ul>
-<li><p>维持状态最简单的技术。</p>
-</li>
-<li><p>Cookie在客户端维护。</p>
-</li>
+<h4 id="Cookie的优点"><a href="#Cookie的优点" class="headerlink" title="Cookie的优点"></a>Cookie的优点</h4><ul>
+<li>维持状态最简单的技术。</li>
+<li>Cookie在客户端维护。</li>
 </ul>
-<h4 id="Cookie的缺点"><a href="#Cookie的缺点" class="headerlink" title="Cookie的缺点"></a>Cookie的缺点</h4><hr>
-<ul>
+<h4 id="Cookie的缺点"><a href="#Cookie的缺点" class="headerlink" title="Cookie的缺点"></a>Cookie的缺点</h4><ul>
 <li>如果从浏览器中禁用Cookie，则无法正常工作。</li>
 <li>只能在Cookie对象中设置文本信息。</li>
 </ul>
-<h4 id="Servlet-Cookie的应用示例"><a href="#Servlet-Cookie的应用示例" class="headerlink" title="Servlet Cookie的应用示例"></a>Servlet Cookie的应用示例</h4><hr>
-<p>在这个例子中，我们将用户名称(<code>username</code>)存储在cookie对象中，并在另一个servlet中访问它，会话对应于特定用户。所以如果从多个浏览器访问指定cookie名称，那么将得到不同的值。</p>
+<h4 id="Servlet-Cookie的应用示例"><a href="#Servlet-Cookie的应用示例" class="headerlink" title="Servlet Cookie的应用示例"></a>Servlet Cookie的应用示例</h4><p>在这个例子中，我们将用户名称(<code>username</code>)存储在cookie对象中，并在另一个servlet中访问它，会话对应于特定用户。所以如果从多个浏览器访问指定cookie名称，那么将得到不同的值。</p>
 <p><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1ftam23cv5sj30gq082wei.jpg" alt=""></p>
 <p>打开Eclipse，创建一个动态Web项目：<em>CookieServlet</em>，其完整的项目结构如下 -</p>
 <p><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1ftam2naengj30go0fy74v.jpg" alt=""></p>
@@ -435,7 +424,7 @@
         <p><span>本文标题:</span><a href="/2018/07/14/Servlet Cookies/">Servlet Cookies</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">小琦</a></p>
         <p><span>发布时间:</span>2018-07-14, 15:55:12</p>
-        <p><span>最后更新:</span>2018-07-15, 16:42:22</p>
+        <p><span>最后更新:</span>2018-07-15, 16:46:55</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2018/07/14/Servlet Cookies/" title="Servlet Cookies">http://yoursite.com/2018/07/14/Servlet Cookies/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/07/14/Servlet Cookies/　　作者: 小琦" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -491,7 +480,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Servlet-Cookies"><span class="toc-number">1.</span> <span class="toc-text">Servlet Cookies</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Cookie工作原理"><span class="toc-number">1.1.</span> <span class="toc-text">Cookie工作原理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Cookie类型"><span class="toc-number">1.2.</span> <span class="toc-text">Cookie类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Cookie的优点"><span class="toc-number">1.3.</span> <span class="toc-text">Cookie的优点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Cookie的缺点"><span class="toc-number">1.4.</span> <span class="toc-text">Cookie的缺点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Servlet-Cookie的应用示例"><span class="toc-number">1.5.</span> <span class="toc-text">Servlet Cookie的应用示例</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Servlet-Cookies"><span class="toc-number">1.</span> <span class="toc-text">Servlet Cookies</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Cookie工作原理"><span class="toc-number">1.1.</span> <span class="toc-text">Cookie工作原理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Cookie类型"><span class="toc-number">1.2.</span> <span class="toc-text">Cookie类型</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#非持久性cookie"><span class="toc-number">1.2.1.</span> <span class="toc-text">非持久性cookie</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#持久性Cookie"><span class="toc-number">1.2.2.</span> <span class="toc-text">持久性Cookie</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Cookie的优点"><span class="toc-number">1.3.</span> <span class="toc-text">Cookie的优点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Cookie的缺点"><span class="toc-number">1.4.</span> <span class="toc-text">Cookie的缺点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Servlet-Cookie的应用示例"><span class="toc-number">1.5.</span> <span class="toc-text">Servlet Cookie的应用示例</span></a></li></ol></li></ol>
         
     </div>
     <style>
