@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-15T08:34:21.505Z</updated>
+  <updated>2018-07-15T08:38:45.518Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Servlet请求转发和重定向</title>
+    <link href="http://yoursite.com/2018/07/14/Servlet%E8%AF%B7%E6%B1%82%E8%BD%AC%E5%8F%91%E5%92%8C%E9%87%8D%E5%AE%9A%E5%90%91/"/>
+    <id>http://yoursite.com/2018/07/14/Servlet请求转发和重定向/</id>
+    <published>2018-07-14T02:55:12.000Z</published>
+    <updated>2018-07-15T08:38:45.518Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;数据来源于网络，仅供平时查询使用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;一、Servlet-RequestDispatcher请求转发&quot;&gt;&lt;a href=&quot;#一、Servlet-RequestDispatcher请求转发&quot; class=&quot;headerlink&quot; title=&quot;一、Servlet RequestDispatcher请求转发&quot;&gt;&lt;/a&gt;一、Servlet RequestDispatcher请求转发&lt;/h2&gt;&lt;p&gt;&lt;code&gt;RequestDispatcher&lt;/code&gt;接口提供将请求转发送到另一个资源的功能，它可能是&lt;code&gt;html&lt;/code&gt;，&lt;code&gt;servlet&lt;/code&gt;或&lt;code&gt;jsp&lt;/code&gt;等。 此接口也可用于包括另一资源的内容。它是servlet协作的一种方式，工作在服务器端。&lt;/p&gt;
+&lt;p&gt;在&lt;code&gt;RequestDispatcher&lt;/code&gt;接口中定义了两种方法。它们分别是 ：&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Servlet" scheme="http://yoursite.com/categories/Servlet/"/>
+    
+    
+      <category term="请求转发" scheme="http://yoursite.com/tags/%E8%AF%B7%E6%B1%82%E8%BD%AC%E5%8F%91/"/>
+    
+      <category term="重定向" scheme="http://yoursite.com/tags/%E9%87%8D%E5%AE%9A%E5%90%91/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Servlet身份验证过滤器</title>
     <link href="http://yoursite.com/2018/07/13/Servlet%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E8%BF%87%E6%BB%A4%E5%99%A8/"/>
     <id>http://yoursite.com/2018/07/13/Servlet身份验证过滤器/</id>
     <published>2018-07-13T10:52:12.000Z</published>
-    <updated>2018-07-15T08:34:21.505Z</updated>
+    <updated>2018-07-15T08:36:10.717Z</updated>
     
     <summary type="html">
     
@@ -29,7 +55,7 @@
 &lt;p&gt;数据来源于网络，仅供平时查询使用&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;Servlet身份验证过滤器&quot;&gt;&lt;a href=&quot;#Servlet身份验证过滤器&quot; class=&quot;headerlink&quot; title=&quot;Servlet身份验证过滤器&quot;&gt;&lt;/a&gt;Servlet身份验证过滤器&lt;/h3&gt;&lt;p&gt;可以在过滤器中执行身份认证。 在这里，我们将如何在过滤器类检查由用户提交的密码，如果给定密码为&lt;code&gt;admin&lt;/code&gt;，它将把请求转发到&lt;code&gt;WelcomeAdmin&lt;/code&gt; servlet，否则会显示错误消息。&lt;/p&gt;
-&lt;h5 id=&quot;使用过滤器验证用户的示例&quot;&gt;&lt;a href=&quot;#使用过滤器验证用户的示例&quot; class=&quot;headerlink&quot; title=&quot;使用过滤器验证用户的示例&quot;&gt;&lt;/a&gt;使用过滤器验证用户的示例&lt;/h5&gt;&lt;hr&gt;
+&lt;h5 id=&quot;使用过滤器验证用户的示例&quot;&gt;&lt;a href=&quot;#使用过滤器验证用户的示例&quot; class=&quot;headerlink&quot; title=&quot;使用过滤器验证用户的示例&quot;&gt;&lt;/a&gt;使用过滤器验证用户的示例&lt;/h5&gt;
     
     </summary>
     
