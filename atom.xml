@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-15T08:46:55.923Z</updated>
+  <updated>2018-07-15T13:46:37.437Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Servlet表单隐藏字段</title>
+    <link href="http://yoursite.com/2018/07/14/Servlet%E8%A1%A8%E5%8D%95%E9%9A%90%E8%97%8F%E5%AD%97%E6%AE%B5/"/>
+    <id>http://yoursite.com/2018/07/14/Servlet表单隐藏字段/</id>
+    <published>2018-07-14T10:55:12.000Z</published>
+    <updated>2018-07-15T13:46:37.437Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;数据来源于网络，仅供平时查询使用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Servlet表单隐藏字段&quot;&gt;&lt;a href=&quot;#Servlet表单隐藏字段&quot; class=&quot;headerlink&quot; title=&quot;Servlet表单隐藏字段&quot;&gt;&lt;/a&gt;Servlet表单隐藏字段&lt;/h3&gt;&lt;p&gt;在隐藏表单字段的情况下，一般使用隐藏(不可见)文本字段来维护用户的状态。&lt;/p&gt;
+&lt;p&gt;在这种情况下，我们将信息存储在隐藏字段中，并从另一个servlet获取信息。 如果必须在所有页面中提交表单，但不想依赖浏览器，这种方法会更好。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Servlet" scheme="http://yoursite.com/categories/Servlet/"/>
+    
+    
+      <category term="表单隐藏" scheme="http://yoursite.com/tags/%E8%A1%A8%E5%8D%95%E9%9A%90%E8%97%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>Servlet Cookies</title>
