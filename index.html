@@ -218,7 +218,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JDBC/">JDBC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具软件/">工具软件</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/提高效率/">提高效率</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JDBC/">JDBC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具软件/">工具软件</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/提高效率/">提高效率</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生命周期/">生命周期</a></li></ul>
                     </div>
                 </section>
                 
@@ -389,6 +389,128 @@
 
 
   
+    <article id="post-Servlet生命周期" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/07/11/Servlet生命周期/" class="article-date">
+      <time datetime="2018-07-11T07:55:12.000Z" itemprop="datePublished">2018-07-11</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/11/Servlet生命周期/">Servlet生命周期</a>
+    </h1>
+  
+
+        
+           <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">395字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">1分</span>
+      </span>
+    </span>
+</div>
+        
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <blockquote>
+<p>数据来源于网络，仅供平时查询使用</p>
+</blockquote>
+<h3 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h3><h4 id="一-Servlet的生命周期，主要分为一下几个步骤"><a href="#一-Servlet的生命周期，主要分为一下几个步骤" class="headerlink" title="一. Servlet的生命周期，主要分为一下几个步骤"></a>一. Servlet的生命周期，主要分为一下几个步骤</h4><ul>
+<li><p>加载Servlet类</p>
+</li>
+<li><p>创建Servlet类</p>
+</li>
+<li><p>调用Servlet类的init方法</p>
+</li>
+<li><p>调用Servlet的service方法</p>
+</li>
+<li><p>调用Servlet的destroy方法</p>
+<p>如果<code>Sevlet</code>实例被创建，则Servlet处于新状态。调用<code>init()</code>方法后，Servlet进入<strong>就绪状态</strong>。在就绪状态下，servlet执行所有任务。当web容器调用<code>destroy()</code>方法时，它转移到<strong>结束状态</strong>。</p>
+</li>
+</ul>
+<ol>
+<li><strong>加载Servlet类</strong></li>
+</ol>
+<p>类加载器负责加载servlet类。 当Web容器接收到servlet的第一个请求时，将加载servlet类。</p>
+<ol start="2">
+<li><strong>创建Servlet实例</strong></li>
+</ol>
+<p>Web容器在加载servlet类之后创建一个servlet的实例。servlet实例在servlet生命周期中只创建一次。</p>
+<ol start="3">
+<li><strong>调用init方法</strong></li>
+</ol>
+<p>Web容器在创建servlet实例后调用<code>init</code>方法一次。 <code>init</code>方法用于初始化servlet。 它是<code>javax.servlet.Servlet</code>接口的生命周期方法。<code>init</code>方法的语法如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">service</span><span class="params">(ServletRequest request, ServletResponse response)</span>   </span></span><br><span class="line"><span class="function">  <span class="keyword">throws</span> ServletException, IOException</span></span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li><strong>调用service方法</strong></li>
+</ol>
+<p>每当接收到servlet的请求时，Web容器都会调用<code>service</code>方法。如果servlet未初始化，则遵循上述前三个步骤，然后调用<code>service</code>方法。 如果servlet被初始化，它调用<code>service</code>方法。 请注意，servlet仅初始化一次。 Servlet接口的<code>service</code>方法的语法如下：</p>
+<ol start="5">
+<li><strong>调用destroy方法</strong></li>
+</ol>
+<p>从服务中删除servlet实例之前，Web容器调用<code>destroy</code>方法。它使servlet有机会清理所有资源，例如内存，线程等。Servlet接口的<code>destroy</code>方法的语法如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">destroy</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Servlet/">Servlet</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生命周期/">生命周期</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-HTML和CSS" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -472,91 +594,6 @@
         <p class="article-more-link">
           <a href="/2018/07/08/HTML和CSS/#more">阅读全文 >></a>
         </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/07/02/hello-world/" class="article-date">
-      <time datetime="2018-07-02T07:32:28.730Z" itemprop="datePublished">2018-07-02</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/02/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-           <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">78字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
-      </span>
-    </span>
-</div>
-        
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
       
       <div class="clearfix"></div>
     </div>
@@ -794,7 +831,7 @@ git clone [project-url]
                     </span>
                 
                 <span>| </span>
-                <span class="post-count">  已经写了 3.7k 字啦</span>
+                <span class="post-count">  已经写了 4.1k 字啦</span>
             </div>
         
         </br>

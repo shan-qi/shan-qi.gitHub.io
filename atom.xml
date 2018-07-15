@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-11T08:42:57.181Z</updated>
+  <updated>2018-07-15T06:30:52.690Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2018/07/11/Mac%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     <id>http://yoursite.com/2018/07/11/Mac连接数据库/</id>
     <published>2018-07-11T07:55:12.000Z</published>
-    <updated>2018-07-11T08:42:57.181Z</updated>
+    <updated>2018-07-15T06:30:52.690Z</updated>
     
     <summary type="html">
     
@@ -33,6 +33,35 @@
     
     
       <category term="JDBC" scheme="http://yoursite.com/tags/JDBC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Servlet生命周期</title>
+    <link href="http://yoursite.com/2018/07/11/Servlet%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
+    <id>http://yoursite.com/2018/07/11/Servlet生命周期/</id>
+    <published>2018-07-11T07:55:12.000Z</published>
+    <updated>2018-07-15T08:17:22.623Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;数据来源于网络，仅供平时查询使用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;生命周期&quot;&gt;&lt;a href=&quot;#生命周期&quot; class=&quot;headerlink&quot; title=&quot;生命周期&quot;&gt;&lt;/a&gt;生命周期&lt;/h3&gt;&lt;h4
+        
+      
+    
+    </summary>
+    
+      <category term="Servlet" scheme="http://yoursite.com/categories/Servlet/"/>
+    
+    
+      <category term="生命周期" scheme="http://yoursite.com/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
     
   </entry>
   
@@ -67,28 +96,6 @@
       <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
     
       <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2018/07/02/hello-world/"/>
-    <id>http://yoursite.com/2018/07/02/hello-world/</id>
-    <published>2018-07-02T07:32:28.730Z</published>
-    <updated>2018-07-02T07:32:28.730Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
-    
-    </summary>
-    
     
   </entry>
   
