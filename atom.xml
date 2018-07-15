@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-15T13:46:37.437Z</updated>
+  <updated>2018-07-15T13:50:16.917Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Servlet登录注销Cookies实例</title>
+    <link href="http://yoursite.com/2018/07/14/Servlet%E7%99%BB%E5%BD%95%E6%B3%A8%E9%94%80Cookies%E5%AE%9E%E4%BE%8B/"/>
+    <id>http://yoursite.com/2018/07/14/Servlet登录注销Cookies实例/</id>
+    <published>2018-07-14T14:24:12.000Z</published>
+    <updated>2018-07-15T13:50:16.917Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;数据来源于网络，仅供平时查询使用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Servlet登录注销Cookies实例&quot;&gt;&lt;a href=&quot;#Servlet登录注销Cookies实例&quot; class=&quot;headerlink&quot; title=&quot;Servlet登录注销Cookies实例&quot;&gt;&lt;/a&gt;Servlet登录注销Cookies实例&lt;/h3&gt;&lt;p&gt;Cookie是存储在客户端的一种信息技术。&lt;/p&gt;
+&lt;p&gt;在这个例子中，我们创建了&lt;code&gt;3&lt;/code&gt;个链接：登录，注销和用户资料。用户在未登录之前不能进入个人资料页面。如果用户已经注销，则需要再次登录才能访问个人资料。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Servlet" scheme="http://yoursite.com/categories/Servlet/"/>
+    
+    
+      <category term="登录注销Cookies" scheme="http://yoursite.com/tags/%E7%99%BB%E5%BD%95%E6%B3%A8%E9%94%80Cookies/"/>
+    
+  </entry>
   
   <entry>
     <title>Servlet表单隐藏字段</title>
