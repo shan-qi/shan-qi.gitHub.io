@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-15T08:26:12.429Z</updated>
+  <updated>2018-07-15T08:34:21.505Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Servlet身份验证过滤器</title>
+    <link href="http://yoursite.com/2018/07/13/Servlet%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E8%BF%87%E6%BB%A4%E5%99%A8/"/>
+    <id>http://yoursite.com/2018/07/13/Servlet身份验证过滤器/</id>
+    <published>2018-07-13T10:52:12.000Z</published>
+    <updated>2018-07-15T08:34:21.505Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;数据来源于网络，仅供平时查询使用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Servlet身份验证过滤器&quot;&gt;&lt;a href=&quot;#Servlet身份验证过滤器&quot; class=&quot;headerlink&quot; title=&quot;Servlet身份验证过滤器&quot;&gt;&lt;/a&gt;Servlet身份验证过滤器&lt;/h3&gt;&lt;p&gt;可以在过滤器中执行身份认证。 在这里，我们将如何在过滤器类检查由用户提交的密码，如果给定密码为&lt;code&gt;admin&lt;/code&gt;，它将把请求转发到&lt;code&gt;WelcomeAdmin&lt;/code&gt; servlet，否则会显示错误消息。&lt;/p&gt;
+&lt;h5 id=&quot;使用过滤器验证用户的示例&quot;&gt;&lt;a href=&quot;#使用过滤器验证用户的示例&quot; class=&quot;headerlink&quot; title=&quot;使用过滤器验证用户的示例&quot;&gt;&lt;/a&gt;使用过滤器验证用户的示例&lt;/h5&gt;&lt;hr&gt;
+    
+    </summary>
+    
+      <category term="Servlet" scheme="http://yoursite.com/categories/Servlet/"/>
+    
+    
+      <category term="身份验证" scheme="http://yoursite.com/tags/%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81/"/>
+    
+      <category term="过滤器" scheme="http://yoursite.com/tags/%E8%BF%87%E6%BB%A4%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>Servlet生命周期</title>
