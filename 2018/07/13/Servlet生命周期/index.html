@@ -26,18 +26,18 @@
 
 
 
-<meta name="description" content="数据来源于网络，仅供平时查询使用  生命周期一. Servlet的生命周期，主要分为一下几个步骤 加载Servlet类  创建Servlet类  调用Servlet类的init方法  调用Servlet的service方法  调用Servlet的destroy方法 如果Sevlet实例被创建，则Servlet处于新状态。调用init()方法后，Servlet进入就绪状态。在就绪状态下，servl">
+<meta name="description" content="数据来源于网络，仅供平时查询使用  Servlet的生命周期，主要分为一下几个步骤 加载Servlet类 创建Servlet类 调用Servlet类的init方法 调用Servlet的service方法 调用Servlet的destroy方法  如果Sevlet实例被创建，则Servlet处于新状态。调用init()方法后，Servlet进入就绪状态。在就绪状态下，servlet执行所有任务。当">
 <meta name="keywords" content="生命周期">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Servlet生命周期">
-<meta property="og:url" content="http://yoursite.com/2018/07/11/Servlet生命周期/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/07/13/Servlet生命周期/index.html">
 <meta property="og:site_name" content="小琦的博客">
-<meta property="og:description" content="数据来源于网络，仅供平时查询使用  生命周期一. Servlet的生命周期，主要分为一下几个步骤 加载Servlet类  创建Servlet类  调用Servlet类的init方法  调用Servlet的service方法  调用Servlet的destroy方法 如果Sevlet实例被创建，则Servlet处于新状态。调用init()方法后，Servlet进入就绪状态。在就绪状态下，servl">
+<meta property="og:description" content="数据来源于网络，仅供平时查询使用  Servlet的生命周期，主要分为一下几个步骤 加载Servlet类 创建Servlet类 调用Servlet类的init方法 调用Servlet的service方法 调用Servlet的destroy方法  如果Sevlet实例被创建，则Servlet处于新状态。调用init()方法后，Servlet进入就绪状态。在就绪状态下，servlet执行所有任务。当">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-15T08:17:22.623Z">
+<meta property="og:updated_time" content="2018-07-15T08:26:12.429Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Servlet生命周期">
-<meta name="twitter:description" content="数据来源于网络，仅供平时查询使用  生命周期一. Servlet的生命周期，主要分为一下几个步骤 加载Servlet类  创建Servlet类  调用Servlet类的init方法  调用Servlet的service方法  调用Servlet的destroy方法 如果Sevlet实例被创建，则Servlet处于新状态。调用init()方法后，Servlet进入就绪状态。在就绪状态下，servl">
+<meta name="twitter:description" content="数据来源于网络，仅供平时查询使用  Servlet的生命周期，主要分为一下几个步骤 加载Servlet类 创建Servlet类 调用Servlet类的init方法 调用Servlet的service方法 调用Servlet的destroy方法  如果Sevlet实例被创建，则Servlet处于新状态。调用init()方法后，Servlet进入就绪状态。在就绪状态下，servlet执行所有任务。当">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -297,8 +297,8 @@
       <div class="body-wrap"><article id="post-Servlet生命周期" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/07/11/Servlet生命周期/" class="article-date">
-      <time datetime="2018-07-11T07:55:12.000Z" itemprop="datePublished">2018-07-11</time>
+      <a href="/2018/07/13/Servlet生命周期/" class="article-date">
+      <time datetime="2018-07-13T07:55:12.000Z" itemprop="datePublished">2018-07-13</time>
 </a>
 
 
@@ -323,7 +323,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">395字</span>
+        <span class="post-count">390字</span>
       </span>
     </span>
 
@@ -365,38 +365,34 @@
         <blockquote>
 <p>数据来源于网络，仅供平时查询使用</p>
 </blockquote>
-<h3 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h3><h4 id="一-Servlet的生命周期，主要分为一下几个步骤"><a href="#一-Servlet的生命周期，主要分为一下几个步骤" class="headerlink" title="一. Servlet的生命周期，主要分为一下几个步骤"></a>一. Servlet的生命周期，主要分为一下几个步骤</h4><ul>
-<li><p>加载Servlet类</p>
-</li>
-<li><p>创建Servlet类</p>
-</li>
-<li><p>调用Servlet类的init方法</p>
-</li>
-<li><p>调用Servlet的service方法</p>
-</li>
-<li><p>调用Servlet的destroy方法</p>
-<p>如果<code>Sevlet</code>实例被创建，则Servlet处于新状态。调用<code>init()</code>方法后，Servlet进入<strong>就绪状态</strong>。在就绪状态下，servlet执行所有任务。当web容器调用<code>destroy()</code>方法时，它转移到<strong>结束状态</strong>。</p>
-</li>
+<h3 id="Servlet的生命周期，主要分为一下几个步骤"><a href="#Servlet的生命周期，主要分为一下几个步骤" class="headerlink" title="Servlet的生命周期，主要分为一下几个步骤"></a>Servlet的生命周期，主要分为一下几个步骤</h3><ul>
+<li>加载Servlet类</li>
+<li>创建Servlet类</li>
+<li>调用Servlet类的init方法</li>
+<li>调用Servlet的service方法</li>
+<li>调用Servlet的destroy方法</li>
 </ul>
+<p>如果<code>Sevlet</code>实例被创建，则Servlet处于新状态。调用<code>init()</code>方法后，Servlet进入<strong>就绪状态</strong>。在就绪状态下，servlet执行所有任务。当web容器调用<code>destroy()</code>方法时，它转移到<strong>结束状态</strong>。</p>
+<a id="more"></a> 
 <ol>
-<li><strong>加载Servlet类</strong></li>
+<li><h5 id="加载Servlet类"><a href="#加载Servlet类" class="headerlink" title="加载Servlet类"></a><strong>加载Servlet类</strong></h5></li>
 </ol>
 <p>类加载器负责加载servlet类。 当Web容器接收到servlet的第一个请求时，将加载servlet类。</p>
 <ol start="2">
-<li><strong>创建Servlet实例</strong></li>
+<li><h5 id="创建Servlet实例"><a href="#创建Servlet实例" class="headerlink" title="创建Servlet实例"></a><strong>创建Servlet实例</strong></h5></li>
 </ol>
 <p>Web容器在加载servlet类之后创建一个servlet的实例。servlet实例在servlet生命周期中只创建一次。</p>
 <ol start="3">
-<li><strong>调用init方法</strong></li>
+<li><h5 id="调用init方法"><a href="#调用init方法" class="headerlink" title="调用init方法"></a><strong>调用init方法</strong></h5></li>
 </ol>
 <p>Web容器在创建servlet实例后调用<code>init</code>方法一次。 <code>init</code>方法用于初始化servlet。 它是<code>javax.servlet.Servlet</code>接口的生命周期方法。<code>init</code>方法的语法如下：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">service</span><span class="params">(ServletRequest request, ServletResponse response)</span>   </span></span><br><span class="line"><span class="function">  <span class="keyword">throws</span> ServletException, IOException</span></span><br></pre></td></tr></table></figure>
 <ol start="4">
-<li><strong>调用service方法</strong></li>
+<li><h5 id="调用service方法"><a href="#调用service方法" class="headerlink" title="调用service方法"></a><strong>调用service方法</strong></h5></li>
 </ol>
 <p>每当接收到servlet的请求时，Web容器都会调用<code>service</code>方法。如果servlet未初始化，则遵循上述前三个步骤，然后调用<code>service</code>方法。 如果servlet被初始化，它调用<code>service</code>方法。 请注意，servlet仅初始化一次。 Servlet接口的<code>service</code>方法的语法如下：</p>
 <ol start="5">
-<li><strong>调用destroy方法</strong></li>
+<li><h5 id="调用destroy方法"><a href="#调用destroy方法" class="headerlink" title="调用destroy方法"></a><strong>调用destroy方法</strong></h5></li>
 </ol>
 <p>从服务中删除servlet实例之前，Web容器调用<code>destroy</code>方法。它使servlet有机会清理所有资源，例如内存，线程等。Servlet接口的<code>destroy</code>方法的语法如下：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">destroy</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure>
@@ -408,13 +404,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2018/07/11/Servlet生命周期/">Servlet生命周期</a></p>
+        <p><span>本文标题:</span><a href="/2018/07/13/Servlet生命周期/">Servlet生命周期</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">小琦</a></p>
-        <p><span>发布时间:</span>2018-07-11, 15:55:12</p>
-        <p><span>最后更新:</span>2018-07-15, 16:17:22</p>
+        <p><span>发布时间:</span>2018-07-13, 15:55:12</p>
+        <p><span>最后更新:</span>2018-07-15, 16:26:12</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/07/11/Servlet生命周期/" title="Servlet生命周期">http://yoursite.com/2018/07/11/Servlet生命周期/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/07/11/Servlet生命周期/　　作者: 小琦" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2018/07/13/Servlet生命周期/" title="Servlet生命周期">http://yoursite.com/2018/07/13/Servlet生命周期/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/07/13/Servlet生命周期/　　作者: 小琦" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -426,16 +422,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2018/07/11/Mac连接数据库/">
-                    Mac连接使用JDBC
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2018/07/08/HTML和CSS/">
-                    JAVA-HTML&amp;CSS
+                <a href="/2018/07/11/Mac连接数据库/">
+                    Mac连接使用JDBC
                 </a>
             </div>
         
@@ -473,7 +463,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#生命周期"><span class="toc-number">1.</span> <span class="toc-text">生命周期</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一-Servlet的生命周期，主要分为一下几个步骤"><span class="toc-number">1.1.</span> <span class="toc-text">一. Servlet的生命周期，主要分为一下几个步骤</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Servlet的生命周期，主要分为一下几个步骤"><span class="toc-number">1.</span> <span class="toc-text">Servlet的生命周期，主要分为一下几个步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#加载Servlet类"><span class="toc-number">1.0.1.</span> <span class="toc-text">加载Servlet类</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#创建Servlet实例"><span class="toc-number">1.0.2.</span> <span class="toc-text">创建Servlet实例</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#调用init方法"><span class="toc-number">1.0.3.</span> <span class="toc-text">调用init方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#调用service方法"><span class="toc-number">1.0.4.</span> <span class="toc-text">调用service方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#调用destroy方法"><span class="toc-number">1.0.5.</span> <span class="toc-text">调用destroy方法</span></a></li></ol></li></ol></li></ol>
         
     </div>
     <style>
@@ -548,21 +538,19 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2018/07/11/Mac连接数据库/" title="上一篇: Mac连接使用JDBC">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2018/07/08/HTML和CSS/" title="下一篇: JAVA-HTML&amp;CSS">
+            <a href="/2018/07/11/Mac连接数据库/" title="下一篇: Mac连接使用JDBC">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/07/11/Mac连接数据库/">Mac连接使用JDBC</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/11/Servlet生命周期/">Servlet生命周期</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/08/HTML和CSS/">JAVA-HTML&CSS</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/17/程序员必备软件/">程序员必备软件(持续更新中...)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/10/Git-命令小结/">Git-命令小结</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/07/13/Servlet生命周期/">Servlet生命周期</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/11/Mac连接数据库/">Mac连接使用JDBC</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/08/HTML和CSS/">JAVA-HTML&CSS</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/17/程序员必备软件/">程序员必备软件(持续更新中...)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/10/Git-命令小结/">Git-命令小结</a></li></ul>
 
 
 

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-15T06:30:52.690Z</updated>
+  <updated>2018-07-15T08:26:12.429Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Servlet生命周期</title>
+    <link href="http://yoursite.com/2018/07/13/Servlet%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
+    <id>http://yoursite.com/2018/07/13/Servlet生命周期/</id>
+    <published>2018-07-13T07:55:12.000Z</published>
+    <updated>2018-07-15T08:26:12.429Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;数据来源于网络，仅供平时查询使用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Servlet的生命周期，主要分为一下几个步骤&quot;&gt;&lt;a href=&quot;#Servlet的生命周期，主要分为一下几个步骤&quot; class=&quot;headerlink&quot; title=&quot;Servlet的生命周期，主要分为一下几个步骤&quot;&gt;&lt;/a&gt;Servlet的生命周期，主要分为一下几个步骤&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;加载Servlet类&lt;/li&gt;
+&lt;li&gt;创建Servlet类&lt;/li&gt;
+&lt;li&gt;调用Servlet类的init方法&lt;/li&gt;
+&lt;li&gt;调用Servlet的service方法&lt;/li&gt;
+&lt;li&gt;调用Servlet的destroy方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果&lt;code&gt;Sevlet&lt;/code&gt;实例被创建，则Servlet处于新状态。调用&lt;code&gt;init()&lt;/code&gt;方法后，Servlet进入&lt;strong&gt;就绪状态&lt;/strong&gt;。在就绪状态下，servlet执行所有任务。当web容器调用&lt;code&gt;destroy()&lt;/code&gt;方法时，它转移到&lt;strong&gt;结束状态&lt;/strong&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Servlet" scheme="http://yoursite.com/categories/Servlet/"/>
+    
+    
+      <category term="生命周期" scheme="http://yoursite.com/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>Mac连接使用JDBC</title>
@@ -33,35 +63,6 @@
     
     
       <category term="JDBC" scheme="http://yoursite.com/tags/JDBC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Servlet生命周期</title>
-    <link href="http://yoursite.com/2018/07/11/Servlet%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
-    <id>http://yoursite.com/2018/07/11/Servlet生命周期/</id>
-    <published>2018-07-11T07:55:12.000Z</published>
-    <updated>2018-07-15T08:17:22.623Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;数据来源于网络，仅供平时查询使用&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;生命周期&quot;&gt;&lt;a href=&quot;#生命周期&quot; class=&quot;headerlink&quot; title=&quot;生命周期&quot;&gt;&lt;/a&gt;生命周期&lt;/h3&gt;&lt;h4
-        
-      
-    
-    </summary>
-    
-      <category term="Servlet" scheme="http://yoursite.com/categories/Servlet/"/>
-    
-    
-      <category term="生命周期" scheme="http://yoursite.com/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
     
   </entry>
   
