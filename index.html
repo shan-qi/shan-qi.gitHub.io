@@ -218,7 +218,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Cookies/">Cookies</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JDBC/">JDBC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/在线人数/">在线人数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/增删改查/">增删改查</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具软件/">工具软件</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/提高效率/">提高效率</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生命周期/">生命周期</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/登录注销/">登录注销</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/登录注销Cookies/">登录注销Cookies</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/表单隐藏/">表单隐藏</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/请求转发/">请求转发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/身份验证/">身份验证</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/过滤器/">过滤器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/重定向/">重定向</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Cookies/">Cookies</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JDBC/">JDBC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/内存回收/">内存回收</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/在线人数/">在线人数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/增删改查/">增删改查</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/多线程/">多线程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具软件/">工具软件</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/引用计数/">引用计数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/提高效率/">提高效率</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生命周期/">生命周期</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/登录注销/">登录注销</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/登录注销Cookies/">登录注销Cookies</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/表单隐藏/">表单隐藏</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/请求转发/">请求转发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/身份验证/">身份验证</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/过滤器/">过滤器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/重定向/">重定向</a></li></ul>
                     </div>
                 </section>
                 
@@ -299,6 +299,100 @@
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-iOS  atomic与nonatomic，assign,copy与retain的定义和区别" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/07/18/iOS  atomic与nonatomic，assign,copy与retain的定义和区别/" class="article-date">
+      <time datetime="2018-07-18T02:51:12.000Z" itemprop="datePublished">2018-07-18</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/18/iOS  atomic与nonatomic，assign,copy与retain的定义和区别/">Mac连接使用JDBC</a>
+    </h1>
+  
+
+        
+           <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">981字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">4分</span>
+      </span>
+    </span>
+</div>
+        
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <blockquote>
+<p>数据来源于网络，仅供平时查询使用</p>
+</blockquote>
+<h3 id="iOS-atomic与nonatomic，assign-copy与retain的定义和区别"><a href="#iOS-atomic与nonatomic，assign-copy与retain的定义和区别" class="headerlink" title="iOS     atomic与nonatomic，assign,copy与retain的定义和区别"></a>iOS     atomic与nonatomic，assign,copy与retain的定义和区别</h3><blockquote>
+<p> 注:atomic和nonatomic用来决定编译器生成的getter和setter是否为原子操作。</p>
+</blockquote>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/iOS/">iOS</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/内存回收/">内存回收</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/多线程/">多线程</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/引用计数/">引用计数</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2018/07/18/iOS  atomic与nonatomic，assign,copy与retain的定义和区别/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-Servlet增删改查" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -1143,95 +1237,6 @@
 
 
   
-    <article id="post-Mac连接数据库" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/07/11/Mac连接数据库/" class="article-date">
-      <time datetime="2018-07-11T07:55:12.000Z" itemprop="datePublished">2018-07-11</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/11/Mac连接数据库/">Mac连接使用JDBC</a>
-    </h1>
-  
-
-        
-           <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">835字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">4分</span>
-      </span>
-    </span>
-</div>
-        
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h3 id="Mac连接数据库"><a href="#Mac连接数据库" class="headerlink" title="Mac连接数据库"></a>Mac连接数据库</h3><p><strong>1.</strong>安装好<a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">mysql</a>和<a href="https://www.cnblogs.com/xqx-qyy/p/7659805.html" target="_blank" rel="noopener">java</a>，安装成功后打开系统偏好设置，下面会看到<img src="https://ws3.sinaimg.cn/large/006tNc79gy1ft5zwomvx9j301e01f0kg.jpg" alt="">，mysql安装成功后打开命令行，输入<strong>mysql.server start</strong>即可打开数据库。</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/JAVA/">JAVA</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JDBC/">JDBC</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2018/07/11/Mac连接数据库/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-
-</article>
-
-
-
-
-
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1266,7 +1271,7 @@
                     </span>
                 
                 <span>| </span>
-                <span class="post-count">  已经写了 14.5k 字啦</span>
+                <span class="post-count">  已经写了 15.5k 字啦</span>
             </div>
         
         </br>
