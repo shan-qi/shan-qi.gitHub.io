@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-13T02:03:13.549Z</updated>
+  <updated>2018-12-04T06:05:37.090Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2018/12/04/%E5%B0%86maven%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2018/12/04/将maven部署到服务器出现的问题/</id>
+    <published>2018-12-04T05:19:44.169Z</published>
+    <updated>2018-12-04T06:05:37.090Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;title: maven部署windows出现的问题&lt;br&gt;  author: 小琦&lt;pre&gt;&lt;code&gt;tags:
+​    - 环境变量
+​    - 热部署
+​    - war
+categories:
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;iOS&lt;/li&gt;
+&lt;li&gt;Linux&lt;/li&gt;
+&lt;li&gt;Windows&lt;br&gt;abbrlink: 3cfa&lt;br&gt;date: 2018-07-20 13:00:12&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;将maven部署windows出现的问题&quot;&gt;&lt;a href=&quot;#将maven部署windows出现的问题&quot; class=&quot;headerlink&quot; title=&quot;将maven部署windows出现的问题&quot;&gt;&lt;/a&gt;将maven部署windows出现的问题&lt;/h3&gt;&lt;h4 id=&quot;1-配置jdk的环境变量：&quot;&gt;&lt;a href=&quot;#1-配置jdk的环境变量：&quot; class=&quot;headerlink&quot; title=&quot;1.配置jdk的环境变量：&quot;&gt;&lt;/a&gt;1.配置jdk的环境变量：&lt;/h4&gt;&lt;p&gt;​    1.新建一个名字为&lt;strong&gt;JAVA_HOME&lt;/strong&gt;的环境变量(变量值为Java的安装路径)&lt;/p&gt;
+&lt;p&gt;​    2.设置&lt;strong&gt;path&lt;/strong&gt;值，添加(%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin)&lt;/p&gt;
+&lt;p&gt;​    3.新建一个名为&lt;strong&gt;classpath&lt;/strong&gt;的环境变量,添加(.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar)&lt;/p&gt;
+&lt;p&gt;​    4.测试是否配置成功输入&lt;strong&gt;java&lt;/strong&gt;、&lt;strong&gt;javac&lt;/strong&gt;、&lt;strong&gt;java -version&lt;/strong&gt;(之间有空格)&lt;/p&gt;
+&lt;p&gt;​        ==注意:输入echo %JAVA_HOME% 来查看当前的javahome路径。==&lt;/p&gt;
+&lt;h4 id=&quot;2-配置tomcat的环境变量&quot;&gt;&lt;a href=&quot;#2-配置tomcat的环境变量&quot; class=&quot;headerlink&quot; title=&quot;2.配置tomcat的环境变量&quot;&gt;&lt;/a&gt;2.配置tomcat的环境变量&lt;/h4&gt;&lt;p&gt;​    1.&lt;strong&gt;CATALINA_BASE：&lt;/strong&gt;【安装tomcat的路径】&lt;/p&gt;
+&lt;p&gt;​    2.&lt;strong&gt;CATALINA_HOME：&lt;/strong&gt;【同上，安装tomcat的路径】&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>iOS  atomic与nonatomic，assign,copy与retain的定义和区别</title>
@@ -40,6 +73,30 @@
       <category term="引用计数" scheme="http://yoursite.com/tags/%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0/"/>
     
       <category term="内存回收" scheme="http://yoursite.com/tags/%E5%86%85%E5%AD%98%E5%9B%9E%E6%94%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>程序员必备软件(持续更新中...)</title>
+    <link href="http://yoursite.com/2018/07/17/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6/"/>
+    <id>http://yoursite.com/2018/07/17/程序员必备软件/</id>
+    <published>2018-07-17T10:55:12.000Z</published>
+    <updated>2018-12-04T06:00:32.920Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;程序员的任务就是开发，那开发自然少不了一些软件的帮助，那么有哪些软件是开发必须的或者是一定程度上提高开发效率的呢？&lt;/p&gt;
+&lt;p&gt;接下来就会介绍一下我自己电脑上必备的软件和&lt;strong&gt;使用教程&lt;/strong&gt;(有些自己写的，也有是别人写的)。本篇文章主要针对 &lt;code&gt;Mac&lt;/code&gt; 的用户，当然介绍的软件也有 &lt;code&gt;windows&lt;/code&gt; 版本，就麻烦看客自行上网搜索吧。&lt;/p&gt;
+&lt;p&gt;先展示一下我电脑上的软件截图：&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="程序员必备软件" scheme="http://yoursite.com/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+      <category term="工具软件" scheme="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="提高效率" scheme="http://yoursite.com/tags/%E6%8F%90%E9%AB%98%E6%95%88%E7%8E%87/"/>
     
   </entry>
   
@@ -320,30 +377,6 @@
       <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
     
       <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>程序员必备软件(持续更新中...)</title>
-    <link href="http://yoursite.com/2018/03/17/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6/"/>
-    <id>http://yoursite.com/2018/03/17/程序员必备软件/</id>
-    <published>2018-03-17T10:55:12.000Z</published>
-    <updated>2018-07-16T00:53:39.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;程序员的任务就是开发，那开发自然少不了一些软件的帮助，那么有哪些软件是开发必须的或者是一定程度上提高开发效率的呢？&lt;/p&gt;
-&lt;p&gt;接下来就会介绍一下我自己电脑上必备的软件和&lt;strong&gt;使用教程&lt;/strong&gt;(有些自己写的，也有是别人写的)。本篇文章主要针对 &lt;code&gt;Mac&lt;/code&gt; 的用户，当然介绍的软件也有 &lt;code&gt;windows&lt;/code&gt; 版本，就麻烦看客自行上网搜索吧。&lt;/p&gt;
-&lt;p&gt;先展示一下我电脑上的软件截图：&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="程序员必备软件" scheme="http://yoursite.com/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-      <category term="工具软件" scheme="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/"/>
-    
-      <category term="提高效率" scheme="http://yoursite.com/tags/%E6%8F%90%E9%AB%98%E6%95%88%E7%8E%87/"/>
     
   </entry>
   

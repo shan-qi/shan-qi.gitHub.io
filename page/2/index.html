@@ -300,6 +300,198 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-Servlet HttpSessionEvent统计在线用户数实例" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/07/13/Servlet HttpSessionEvent统计在线用户数实例/" class="article-date">
+      <time datetime="2018-07-13T07:55:12.000Z" itemprop="datePublished">2018-07-13</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/13/Servlet HttpSessionEvent统计在线用户数实例/">Servlet HttpSessionEvent统计在线用户数实例</a>
+    </h1>
+  
+
+        
+           <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">1,389字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">7分</span>
+      </span>
+    </span>
+</div>
+        
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <blockquote>
+<p>数据来源于网络，仅供平时查询使用</p>
+</blockquote>
+<p>会话对象更改时通知<code>HttpSessionEvent</code>，此事件的相应侦听器接口是<code>HttpSessionListener</code>。</p>
+<p>我们可以在这个事件上执行一些操作，例如：计数统计当前登录的用户，记录登录时间，注销时间等用户详细信息。</p>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Servlet/">Servlet</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/在线人数/">在线人数</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2018/07/13/Servlet HttpSessionEvent统计在线用户数实例/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-Servlet生命周期" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/07/13/Servlet生命周期/" class="article-date">
+      <time datetime="2018-07-13T07:55:12.000Z" itemprop="datePublished">2018-07-13</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/13/Servlet生命周期/">Servlet生命周期</a>
+    </h1>
+  
+
+        
+           <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">390字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">1分</span>
+      </span>
+    </span>
+</div>
+        
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <blockquote>
+<p>数据来源于网络，仅供平时查询使用</p>
+</blockquote>
+<h3 id="Servlet的生命周期，主要分为一下几个步骤"><a href="#Servlet的生命周期，主要分为一下几个步骤" class="headerlink" title="Servlet的生命周期，主要分为一下几个步骤"></a>Servlet的生命周期，主要分为一下几个步骤</h3><ul>
+<li>加载Servlet类</li>
+<li>创建Servlet类</li>
+<li>调用Servlet类的init方法</li>
+<li>调用Servlet的service方法</li>
+<li>调用Servlet的destroy方法</li>
+</ul>
+<p>如果<code>Sevlet</code>实例被创建，则Servlet处于新状态。调用<code>init()</code>方法后，Servlet进入<strong>就绪状态</strong>。在就绪状态下，servlet执行所有任务。当web容器调用<code>destroy()</code>方法时，它转移到<strong>结束状态</strong>。</p>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Servlet/">Servlet</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生命周期/">生命周期</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2018/07/13/Servlet生命周期/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-Mac连接数据库" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -490,97 +682,6 @@
 
 
   
-    <article id="post-程序员必备软件" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/03/17/程序员必备软件/" class="article-date">
-      <time datetime="2018-03-17T10:55:12.000Z" itemprop="datePublished">2018-03-17</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/17/程序员必备软件/">程序员必备软件(持续更新中...)</a>
-    </h1>
-  
-
-        
-           <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">478字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">2分</span>
-      </span>
-    </span>
-</div>
-        
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>程序员的任务就是开发，那开发自然少不了一些软件的帮助，那么有哪些软件是开发必须的或者是一定程度上提高开发效率的呢？</p>
-<p>接下来就会介绍一下我自己电脑上必备的软件和<strong>使用教程</strong>(有些自己写的，也有是别人写的)。本篇文章主要针对 <code>Mac</code> 的用户，当然介绍的软件也有 <code>windows</code> 版本，就麻烦看客自行上网搜索吧。</p>
-<p>先展示一下我电脑上的软件截图：</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/程序员必备软件/">程序员必备软件</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具软件/">工具软件</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/提高效率/">提高效率</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2018/03/17/程序员必备软件/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-
-</article>
-
-
-
-
-
-
-
-
-
-  
     <article id="post-Git-命令小结" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -713,7 +814,7 @@ git clone [project-url]
                     </span>
                 
                 <span>| </span>
-                <span class="post-count">  已经写了 15.5k 字啦</span>
+                <span class="post-count">  已经写了 16.4k 字啦</span>
             </div>
         
         </br>
