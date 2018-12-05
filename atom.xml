@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-13T02:03:13.549Z</updated>
+  <updated>2018-12-05T15:05:52.339Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -18,28 +18,21 @@
   
   <entry>
     <title>iOS  atomic与nonatomic，assign,copy与retain的定义和区别</title>
-    <link href="http://yoursite.com/2018/07/18/iOS%20%20atomic%E4%B8%8Enonatomic%EF%BC%8Cassign,copy%E4%B8%8Eretain%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%8C%BA%E5%88%AB/"/>
-    <id>http://yoursite.com/2018/07/18/iOS  atomic与nonatomic，assign,copy与retain的定义和区别/</id>
-    <published>2018-07-18T02:51:12.000Z</published>
-    <updated>2018-10-13T02:03:13.549Z</updated>
+    <link href="http://yoursite.com/2018/07/20/%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/"/>
+    <id>http://yoursite.com/2018/07/20/反射机制/</id>
+    <published>2018-07-19T17:51:19.000Z</published>
+    <updated>2018-12-05T15:05:52.339Z</updated>
     
     <summary type="html">
     
-      &lt;blockquote&gt;
-&lt;p&gt;数据来源于网络，仅供平时查询使用&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;iOS-atomic与nonatomic，assign-copy与retain的定义和区别&quot;&gt;&lt;a href=&quot;#iOS-atomic与nonatomic，assign-copy与retain的定义和区别&quot; class=&quot;headerlink&quot; title=&quot;iOS     atomic与nonatomic，assign,copy与retain的定义和区别&quot;&gt;&lt;/a&gt;iOS     atomic与nonatomic，assign,copy与retain的定义和区别&lt;/h3&gt;&lt;p&gt;&lt;code&gt;注:atomic和nonatomic用来决定编译器生成的getter和setter是否为原子操作。&lt;/code&gt;&lt;/p&gt;
+      &lt;h3 id=&quot;反射机制&quot;&gt;&lt;a href=&quot;#反射机制&quot; class=&quot;headerlink&quot; title=&quot;反射机制&quot;&gt;&lt;/a&gt;反射机制&lt;/h3&gt;&lt;h4 id=&quot;1-获取类信息&quot;&gt;&lt;a href=&quot;#1-获取类信息&quot; class=&quot;headerlink&quot; title=&quot;1.获取类信息&quot;&gt;&lt;/a&gt;1.获取类信息&lt;/h4&gt;&lt;p&gt;​    首先知道，我们知道NSArray等集合对象中不限制锁存储的对象类型，只要他是一个NSObject就行。但有时候我们想知道我们放进去到底是什么类型？&lt;br&gt;​
     
     </summary>
     
       <category term="iOS" scheme="http://yoursite.com/categories/iOS/"/>
     
     
-      <category term="多线程" scheme="http://yoursite.com/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    
-      <category term="引用计数" scheme="http://yoursite.com/tags/%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0/"/>
-    
-      <category term="内存回收" scheme="http://yoursite.com/tags/%E5%86%85%E5%AD%98%E5%9B%9E%E6%94%B6/"/>
+      <category term="反射机制" scheme="http://yoursite.com/tags/%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/"/>
     
   </entry>
   
@@ -68,6 +61,33 @@
       <category term="热部署" scheme="http://yoursite.com/tags/%E7%83%AD%E9%83%A8%E7%BD%B2/"/>
     
       <category term="环境变量" scheme="http://yoursite.com/tags/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>iOS  atomic与nonatomic，assign,copy与retain的定义和区别</title>
+    <link href="http://yoursite.com/2018/07/18/iOS%20%20atomic%E4%B8%8Enonatomic%EF%BC%8Cassign,copy%E4%B8%8Eretain%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%8C%BA%E5%88%AB/"/>
+    <id>http://yoursite.com/2018/07/18/iOS  atomic与nonatomic，assign,copy与retain的定义和区别/</id>
+    <published>2018-07-18T02:51:12.000Z</published>
+    <updated>2018-12-05T03:28:45.770Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;数据来源于网络，仅供平时查询使用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;iOS-atomic与nonatomic，assign-copy与retain的定义和区别&quot;&gt;&lt;a href=&quot;#iOS-atomic与nonatomic，assign-copy与retain的定义和区别&quot; class=&quot;headerlink&quot; title=&quot;iOS     atomic与nonatomic，assign,copy与retain的定义和区别&quot;&gt;&lt;/a&gt;iOS     atomic与nonatomic，assign,copy与retain的定义和区别&lt;/h3&gt;&lt;p&gt;&lt;code&gt;注:atomic和nonatomic用来决定编译器生成的getter和setter是否为原子操作。&lt;/code&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="iOS" scheme="http://yoursite.com/categories/iOS/"/>
+    
+    
+      <category term="多线程" scheme="http://yoursite.com/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    
+      <category term="引用计数" scheme="http://yoursite.com/tags/%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0/"/>
+    
+      <category term="内存回收" scheme="http://yoursite.com/tags/%E5%86%85%E5%AD%98%E5%9B%9E%E6%94%B6/"/>
     
   </entry>
   
@@ -268,30 +288,6 @@
   </entry>
   
   <entry>
-    <title>Servlet HttpSessionEvent统计在线用户数实例</title>
-    <link href="http://yoursite.com/2018/07/13/Servlet%20HttpSessionEvent%E7%BB%9F%E8%AE%A1%E5%9C%A8%E7%BA%BF%E7%94%A8%E6%88%B7%E6%95%B0%E5%AE%9E%E4%BE%8B/"/>
-    <id>http://yoursite.com/2018/07/13/Servlet HttpSessionEvent统计在线用户数实例/</id>
-    <published>2018-07-13T07:55:12.000Z</published>
-    <updated>2018-07-16T00:53:39.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;数据来源于网络，仅供平时查询使用&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;会话对象更改时通知&lt;code&gt;HttpSessionEvent&lt;/code&gt;，此事件的相应侦听器接口是&lt;code&gt;HttpSessionListener&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;我们可以在这个事件上执行一些操作，例如：计数统计当前登录的用户，记录登录时间，注销时间等用户详细信息。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Servlet" scheme="http://yoursite.com/categories/Servlet/"/>
-    
-    
-      <category term="在线人数" scheme="http://yoursite.com/tags/%E5%9C%A8%E7%BA%BF%E4%BA%BA%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Servlet生命周期</title>
     <link href="http://yoursite.com/2018/07/13/Servlet%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
     <id>http://yoursite.com/2018/07/13/Servlet生命周期/</id>
@@ -318,6 +314,30 @@
     
     
       <category term="生命周期" scheme="http://yoursite.com/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Servlet HttpSessionEvent统计在线用户数实例</title>
+    <link href="http://yoursite.com/2018/07/13/Servlet%20HttpSessionEvent%E7%BB%9F%E8%AE%A1%E5%9C%A8%E7%BA%BF%E7%94%A8%E6%88%B7%E6%95%B0%E5%AE%9E%E4%BE%8B/"/>
+    <id>http://yoursite.com/2018/07/13/Servlet HttpSessionEvent统计在线用户数实例/</id>
+    <published>2018-07-13T07:55:12.000Z</published>
+    <updated>2018-07-16T00:53:39.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;数据来源于网络，仅供平时查询使用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;会话对象更改时通知&lt;code&gt;HttpSessionEvent&lt;/code&gt;，此事件的相应侦听器接口是&lt;code&gt;HttpSessionListener&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;我们可以在这个事件上执行一些操作，例如：计数统计当前登录的用户，记录登录时间，注销时间等用户详细信息。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Servlet" scheme="http://yoursite.com/categories/Servlet/"/>
+    
+    
+      <category term="在线人数" scheme="http://yoursite.com/tags/%E5%9C%A8%E7%BA%BF%E4%BA%BA%E6%95%B0/"/>
     
   </entry>
   

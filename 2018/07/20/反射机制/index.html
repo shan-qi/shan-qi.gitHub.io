@@ -26,18 +26,18 @@
 
 
 
-<meta name="description" content="数据来源于网络，仅供平时查询使用  iOS     atomic与nonatomic，assign,copy与retain的定义和区别注:atomic和nonatomic用来决定编译器生成的getter和setter是否为原子操作。">
-<meta name="keywords" content="多线程,引用计数,内存回收">
+<meta name="description" content="反射机制1.获取类信息​    首先知道，我们知道NSArray等集合对象中不限制锁存储的对象类型，只要他是一个NSObject就行。但有时候我们想知道我们放进去到底是什么类型？​">
+<meta name="keywords" content="反射机制">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS  atomic与nonatomic，assign,copy与retain的定义和区别">
-<meta property="og:url" content="http://yoursite.com/2018/07/18/iOS  atomic与nonatomic，assign,copy与retain的定义和区别/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/07/20/反射机制/index.html">
 <meta property="og:site_name" content="小琦的博客">
-<meta property="og:description" content="数据来源于网络，仅供平时查询使用  iOS     atomic与nonatomic，assign,copy与retain的定义和区别注:atomic和nonatomic用来决定编译器生成的getter和setter是否为原子操作。">
+<meta property="og:description" content="反射机制1.获取类信息​    首先知道，我们知道NSArray等集合对象中不限制锁存储的对象类型，只要他是一个NSObject就行。但有时候我们想知道我们放进去到底是什么类型？​">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-05T03:28:45.770Z">
+<meta property="og:updated_time" content="2018-12-05T15:05:52.339Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS  atomic与nonatomic，assign,copy与retain的定义和区别">
-<meta name="twitter:description" content="数据来源于网络，仅供平时查询使用  iOS     atomic与nonatomic，assign,copy与retain的定义和区别注:atomic和nonatomic用来决定编译器生成的getter和setter是否为原子操作。">
+<meta name="twitter:description" content="反射机制1.获取类信息​    首先知道，我们知道NSArray等集合对象中不限制锁存储的对象类型，只要他是一个NSObject就行。但有时候我们想知道我们放进去到底是什么类型？​">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -294,11 +294,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-iOS  atomic与nonatomic，assign,copy与retain的定义和区别" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-反射机制" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/07/18/iOS  atomic与nonatomic，assign,copy与retain的定义和区别/" class="article-date">
-      <time datetime="2018-07-18T02:51:12.000Z" itemprop="datePublished">2018-07-18</time>
+      <a href="/2018/07/20/反射机制/" class="article-date">
+      <time datetime="2018-07-19T17:51:19.000Z" itemprop="datePublished">2018-07-20</time>
 </a>
 
 
@@ -323,7 +323,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">1,017字</span>
+        <span class="post-count">1,255字</span>
       </span>
     </span>
 
@@ -332,7 +332,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">4分</span>
+        <span class="post-count">5分</span>
       </span>
     </span>
 </div>
@@ -352,7 +352,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/内存回收/">内存回收</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/多线程/">多线程</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/引用计数/">引用计数</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/反射机制/">反射机制</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -362,42 +362,37 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <blockquote>
-<p>数据来源于网络，仅供平时查询使用</p>
-</blockquote>
-<h3 id="iOS-atomic与nonatomic，assign-copy与retain的定义和区别"><a href="#iOS-atomic与nonatomic，assign-copy与retain的定义和区别" class="headerlink" title="iOS     atomic与nonatomic，assign,copy与retain的定义和区别"></a>iOS     atomic与nonatomic，assign,copy与retain的定义和区别</h3><p><code>注:atomic和nonatomic用来决定编译器生成的getter和setter是否为原子操作。</code></p>
-<a id="more"></a>
-<p><strong>1.</strong> <strong>atomic</strong></p>
-<p>​    设置成员变量的@property属性时，默认为atomic，提供多线程安全。</p>
-<p>​     在多线程环境下，原子操作是必要的，否则有可能引起错误的结果。加了atomic，setter函数会变成下面这样：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> &#123;lock&#125;</span><br><span class="line">if (property != newValue) &#123; </span><br><span class="line">        [property release]; </span><br><span class="line">        property = [newValue retain]; </span><br><span class="line">&#125;</span><br><span class="line">  &#123;unlock&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>2.</strong> <strong>nonatomic</strong></p>
-<p>​      非原子的，意思是对属性进行存取操作时线程是不安全的，如果再多线程环境下，该属性很可能是不同步的，一个线程读取属性时，另一个属性却修改了属性值，这样两个线程对同规格属性进行操作的情况下，属性的值是不一致的。我们在属性中使用nonatomic的原因是，该属性不会在多线程环境下使用，使用非原子特性能得到较好的性能。</p>
-<p><strong>3.</strong> <strong>assign</strong></p>
-<p>​    对基础数据类型 （NSInteger，CGFloat）和C数据类型（int, float, double, char）等等。</p>
-<p><strong>4.</strong> <strong>retain</strong></p>
-<p>​    对其他NSObject和其子类对参数进行release旧值，再retain新值</p>
-<p>​    指定retain会在赋值时唤醒传入值的retain消息。此属性只能用于Objective-C对象类型，而不能用于Core Foundation对象。<code>(原因很明显，retain会增加对象的引用计数，而基本数据类型或者Core Foundation对象都没有引用计数)</code>。</p>
-<p>​    ==注意:把对象添加到数组中时，引用计数将增加对象的引用次数+1。==</p>
-<p><strong>5.</strong> <strong>copy</strong></p>
-<p>​    对NSString 它指出，在赋值时使用传入值的一份拷贝</p>
-<blockquote>
-<p>copy与retain：</p>
-</blockquote>
-<p>​    <code>注意:Copy其实是建立了一个相同的对象，而retain不是</code></p>
-<p>​      <strong>copy:</strong></p>
-<p>​    copy一个对象时，地址改变，内容不变</p>
-<p>​      <strong>retain:</strong></p>
-<p>​    新的对象retain为1 ，旧有对象没有变化retain 到另外一个NSString 之后，地址相同（建立一个指针，指针拷贝），内容当然相同，这个对象的retain值+1。</p>
-<p>​    ==总结：retain 是指针拷贝，copy 是内容拷贝。==</p>
-<blockquote>
-<p>assign与retain：</p>
-</blockquote>
-<p>​    <strong>1.</strong> 接触过C，那么假设你用malloc分配了一块内存，并且把它的地址赋值给了指针a，后来你希望指针b也共享这块内存，于是你又把a赋值给（assign）了b。此时a和b指向同一块内存，请问当a不再需要这块内存，能否直接释放它？答案是否定的，因为a并不知道b是否还在使用这块内存，如果a释放了，那么b在使用这块内存的时候会引起程序crash掉。</p>
-<p>​        <strong>2.</strong>了解到1中assign的问题，那么如何解决？最简单的一个方法就是使用引用计数（reference counting），还是上面的那个例子，我们给那块内存设一个引用计数，当内存被分配并且赋值给a时，引用计数是1。当把a赋值给b时引用计数增加到2。这时如果a不再使用这块内存，它只需要把引用计数减1，表明自己不再拥有这块内存。b不再使用这块内存时也把引用计数减1。当引用计数变为0的时候，代表该内存不再被任何指针所引用，系统可以把它直接释放掉。</p>
-<p>​    <code>总结：上面两点其实就是assign和retain的区别，assign就是直接赋值，属性在赋值后不会被持有，这样导致的后果就是刚对一个属性赋值后在访问就变成空值了，从而可能引起1中的问题，当数据为int, float等原生类型时，可以使用assign。使用retain操作做使得属性在赋值后一直到对象被销毁之前始终可用，就如2中所述，使用了引用计数，retain引起引用计数加1, releas起引用计数减1，当引用计数为0时，dealloc函数被调用，内存被回收。</code></p>
-<p>​    </p>
-
+        <h3 id="反射机制"><a href="#反射机制" class="headerlink" title="反射机制"></a>反射机制</h3><h4 id="1-获取类信息"><a href="#1-获取类信息" class="headerlink" title="1.获取类信息"></a>1.获取类信息</h4><p>​    首先知道，我们知道NSArray等集合对象中不限制锁存储的对象类型，只要他是一个NSObject就行。但有时候我们想知道我们放进去到底是什么类型？<br>​    <a id="more"></a></p>
+<p>​    我们可以发送class消息：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">id class = [[array objectAtIndex:0]class];</span><br><span class="line">id类型(即对象)其实是一个objc_object结构:</span><br><span class="line">typedef struct objc_object &#123;</span><br><span class="line">    Class isa;</span><br><span class="line">&#125; ∗id;</span><br></pre></td></tr></table></figure>
+<p>​    NSObject 的 class 方法实际是上返回了这个结构中的 isa 成员。isa 指向了一个 Class 对象， 因此除了发送 class 消息外，我们也可以使用 isa 成员来访问 Class 对象。Class 对象指向了该 对象所属的类(即”类对象”)，Objective-C 把类也看成是对象，以贯彻“万物皆对象”的原则)。 </p>
+<p>Class 对象实际上是一个 objc_class 结构: </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">typedef struct objc_class ∗Class; </span><br><span class="line">struct objc_class &#123;</span><br><span class="line">	Class isa;</span><br><span class="line">	Class super_class;</span><br><span class="line">	/∗ followed by runtime specific details... ∗/</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>​    ==<strong>注意</strong>这个结构很象是 objc_object，但多了一个指向父类的 super_class 成员。也就是说，<br>对象跟类的区别仅在于，对象中不保存继承关系，而类(或“类对象”)保存了继承关系。因<br>此我们是通过类而不是对象来追溯类的“父类”、“祖父类”等。:==</p>
+<p>​    有时候需要比较一个对象是否属于某个类，可以使用类似的代码:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if (obj-&gt;isa ==[NSString class])&#123; </span><br><span class="line">	...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>​    而 super_class 成员指向了父类对象，通过它我们可以访问父类的信息。</p>
+<p>​    如果向一个对象发送 class 方法，我们可以得到“类对象”，而如果再向“类对象”发送class 消息，则返回的就是“元类”(meta class)。每个类只能有一个元类，其包含了类方法列表。而类对象不同，它包含了对象的方法列表。    </p>
+<h4 id="2-选择器"><a href="#2-选择器" class="headerlink" title="2.选择器"></a>2.选择器</h4><p>​    选择器实际上是一个方法名称，用@selector 关键字来指定一个选择器，选择器用于查询对象的某个方法。</p>
+<p>​    通过 NSObject 的 responseToSelector 方法，我们可以动态地查询某个对象是否存在指定的 方法。该方法需要指定一个选择器参数: </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if([object responseToSelector:@selector(setResponse:)])&#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line">如果 object 对象能够响应 setResponse:方法，则返回 YES，否则返回 NO。</span><br></pre></td></tr></table></figure>
+<p>​    如果确定某对象能响应指定方法，则可以通过 performSelector:方法进行调用:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[anObject performSelector:@selector(method)];</span><br></pre></td></tr></table></figure>
+<p>​    如果该方法带有参数，则使用 performSelector: withObject:方法传递参数:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[anObject performSelector:@selecor(method) withObject:obj];</span><br></pre></td></tr></table></figure>
+<p>​    除了向对象发送 performSelector 消息之外，Objective-C 还提供了 objc_msgSend 函数，你可以用它向任何对象发送一条消息:    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">objc_msgSend( anObject,@selector(method),obj);</span><br><span class="line">要使用 objc_msgSend 函数，需要导入&lt;objc/message.h&gt;头文件，其完整定义如下:</span><br><span class="line">id objc_msgSend(id theReceiver, SEL theSelector, ...)</span><br><span class="line">函数的第1个参数指向消息的接收者(即该方法的对象)，第2个参数是一个选择器(即 方法)，第3个参数是一个可变参数，是该方法的1个或多个参数，如果该方法没有参数，用 一个nil代替。</span><br><span class="line">方法的返回值通过函数的返回值返回。</span><br></pre></td></tr></table></figure>
+<h4 id="3-类的动态创建"><a href="#3-类的动态创建" class="headerlink" title="3.类的动态创建"></a>3.类的动态创建</h4><p>​    要在代码中创建类，而不是通过静态的.h 和.m 文件定义类，可以使用 Object C 运行时库<br>API(需要#include &lt;objc/runtime.h&gt;):    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Class newClz=objc_allocreateClassPair([NSError class], &quot;RuntimeErrorSubclass&quot;, 0); class_addMethod(newClz, @selector(report), (IMP)ReportFunction, &quot;v@:&quot;); objc_registerClassPair(newClz);</span><br></pre></td></tr></table></figure>
+<p>​    首先，使用 objc_allocateClassPair 动态函数创建了一个类，并在参数中指明该类的父类和 类名。用 class_addMethod 函数为该类增加了一个方法 report，这个方法是由函数 ReportFunction 实现的，由于该函数至少应包含两个参数 self 和_cmd，因此定义了该方法有 3 个参数，类型 分别为 v、@、:(一个返回值，self，_cmd)。 </p>
+<p>v 代表 void，指定了方法的返回值;@代表了 id 类型(对象)，指定了方法的固定参数 self;: 表示选择器类型(SEL)，指定了固定参数_cmd。因此函数 ReportFunction 应当实现为: </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">void ReportFunction(id self, SEL _cmd) &#123;</span><br><span class="line">// 实现代码</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">最后，新类被注册为类对(Class Pair)。</span><br><span class="line">类对注册后，即可在代码中这样使用类 newClz:</span><br><span class="line">id obj = [[newClz alloc] init];</span><br><span class="line">[obj performSelector:@selector(report)];</span><br><span class="line">[obj release];</span><br></pre></td></tr></table></figure>
+<h4 id="4-类的动态加载"><a href="#4-类的动态加载" class="headerlink" title="4.类的动态加载"></a>4.类的动态加载</h4><p>Cocoa 的 Foundation 框架提供的 NSClassFromString 函数类似于 Java 的 Class.forName()方法:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Class clz = NSClassFromString(@&quot;MyClass&quot;);</span><br><span class="line">返回对象为&quot;类对象&quot;Class。通过这种方法，我们从字符串构建类实例就不再是什么问题: </span><br><span class="line">id obj=[[clz alloc]init]</span><br><span class="line">或者</span><br><span class="line">id obj=[[NSClassFromString(@&quot;MyClass&quot;) alloc]init];//不需要#import &quot;MyClass&quot;。</span><br></pre></td></tr></table></figure>
+<h4 id="5-方法的动态调用"><a href="#5-方法的动态调用" class="headerlink" title="5.方法的动态调用"></a>5.方法的动态调用</h4><p>​    通过@selector 关键字我们已经可以在一定程度上实现方法的动态调用。然而更动态的方式是通过 Fundation 框架的 NSSelectorFromString 函数，它可以直接从字符串获得一个选择器:    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SEL sel = NSSelectorFromString(@&quot;doSomethingMethod:&quot;);</span><br><span class="line">if([object respondsToSelector:sel]) &#123;</span><br><span class="line">	[object performSelector:sel withObject:color]; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id=""><a href="#" class="headerlink" title=" "></a> </h4>
       
     </div>
     
@@ -405,13 +400,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2018/07/18/iOS  atomic与nonatomic，assign,copy与retain的定义和区别/">iOS  atomic与nonatomic，assign,copy与retain的定义和区别</a></p>
+        <p><span>本文标题:</span><a href="/2018/07/20/反射机制/">iOS  atomic与nonatomic，assign,copy与retain的定义和区别</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">小琦</a></p>
-        <p><span>发布时间:</span>2018-07-18, 10:51:12</p>
-        <p><span>最后更新:</span>2018-12-05, 11:28:45</p>
+        <p><span>发布时间:</span>2018-07-20, 01:51:19</p>
+        <p><span>最后更新:</span>2018-12-05, 23:05:52</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/07/18/iOS  atomic与nonatomic，assign,copy与retain的定义和区别/" title="iOS  atomic与nonatomic，assign,copy与retain的定义和区别">http://yoursite.com/2018/07/18/iOS  atomic与nonatomic，assign,copy与retain的定义和区别/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/07/18/iOS  atomic与nonatomic，assign,copy与retain的定义和区别/　　作者: 小琦" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2018/07/20/反射机制/" title="iOS  atomic与nonatomic，assign,copy与retain的定义和区别">http://yoursite.com/2018/07/20/反射机制/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/07/20/反射机制/　　作者: 小琦" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -423,16 +418,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2018/07/18/将maven部署到服务器出现的问题/">
-                    maven部署服务器出现的问题
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2018/07/17/程序员必备软件/">
-                    程序员必备软件(持续更新中...)
+                <a href="/2018/07/18/将maven部署到服务器出现的问题/">
+                    maven部署服务器出现的问题
                 </a>
             </div>
         
@@ -470,7 +459,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#iOS-atomic与nonatomic，assign-copy与retain的定义和区别"><span class="toc-number">1.</span> <span class="toc-text">iOS     atomic与nonatomic，assign,copy与retain的定义和区别</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#反射机制"><span class="toc-number">1.</span> <span class="toc-text">反射机制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-获取类信息"><span class="toc-number">1.1.</span> <span class="toc-text">1.获取类信息</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-选择器"><span class="toc-number">1.2.</span> <span class="toc-text">2.选择器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-类的动态创建"><span class="toc-number">1.3.</span> <span class="toc-text">3.类的动态创建</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-类的动态加载"><span class="toc-number">1.4.</span> <span class="toc-text">4.类的动态加载</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-方法的动态调用"><span class="toc-number">1.5.</span> <span class="toc-text">5.方法的动态调用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#"><span class="toc-number">1.6.</span> <span class="toc-text"> </span></a></li></ol></li></ol>
         
     </div>
     <style>
@@ -545,15 +534,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2018/07/18/将maven部署到服务器出现的问题/" title="上一篇: maven部署服务器出现的问题">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2018/07/17/程序员必备软件/" title="下一篇: 程序员必备软件(持续更新中...)">
+            <a href="/2018/07/18/将maven部署到服务器出现的问题/" title="下一篇: maven部署服务器出现的问题">
                 <i class="fa fa-angle-right"></i>
             </a>
         
