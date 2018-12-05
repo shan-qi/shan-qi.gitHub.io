@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-04T06:05:37.090Z</updated>
+  <updated>2018-10-13T02:03:13.549Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,39 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://yoursite.com/2018/12/04/%E5%B0%86maven%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/"/>
-    <id>http://yoursite.com/2018/12/04/将maven部署到服务器出现的问题/</id>
-    <published>2018-12-04T05:19:44.169Z</published>
-    <updated>2018-12-04T06:05:37.090Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;title: maven部署windows出现的问题&lt;br&gt;  author: 小琦&lt;pre&gt;&lt;code&gt;tags:
-​    - 环境变量
-​    - 热部署
-​    - war
-categories:
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;iOS&lt;/li&gt;
-&lt;li&gt;Linux&lt;/li&gt;
-&lt;li&gt;Windows&lt;br&gt;abbrlink: 3cfa&lt;br&gt;date: 2018-07-20 13:00:12&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;将maven部署windows出现的问题&quot;&gt;&lt;a href=&quot;#将maven部署windows出现的问题&quot; class=&quot;headerlink&quot; title=&quot;将maven部署windows出现的问题&quot;&gt;&lt;/a&gt;将maven部署windows出现的问题&lt;/h3&gt;&lt;h4 id=&quot;1-配置jdk的环境变量：&quot;&gt;&lt;a href=&quot;#1-配置jdk的环境变量：&quot; class=&quot;headerlink&quot; title=&quot;1.配置jdk的环境变量：&quot;&gt;&lt;/a&gt;1.配置jdk的环境变量：&lt;/h4&gt;&lt;p&gt;​    1.新建一个名字为&lt;strong&gt;JAVA_HOME&lt;/strong&gt;的环境变量(变量值为Java的安装路径)&lt;/p&gt;
-&lt;p&gt;​    2.设置&lt;strong&gt;path&lt;/strong&gt;值，添加(%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin)&lt;/p&gt;
-&lt;p&gt;​    3.新建一个名为&lt;strong&gt;classpath&lt;/strong&gt;的环境变量,添加(.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar)&lt;/p&gt;
-&lt;p&gt;​    4.测试是否配置成功输入&lt;strong&gt;java&lt;/strong&gt;、&lt;strong&gt;javac&lt;/strong&gt;、&lt;strong&gt;java -version&lt;/strong&gt;(之间有空格)&lt;/p&gt;
-&lt;p&gt;​        ==注意:输入echo %JAVA_HOME% 来查看当前的javahome路径。==&lt;/p&gt;
-&lt;h4 id=&quot;2-配置tomcat的环境变量&quot;&gt;&lt;a href=&quot;#2-配置tomcat的环境变量&quot; class=&quot;headerlink&quot; title=&quot;2.配置tomcat的环境变量&quot;&gt;&lt;/a&gt;2.配置tomcat的环境变量&lt;/h4&gt;&lt;p&gt;​    1.&lt;strong&gt;CATALINA_BASE：&lt;/strong&gt;【安装tomcat的路径】&lt;/p&gt;
-&lt;p&gt;​    2.&lt;strong&gt;CATALINA_HOME：&lt;/strong&gt;【同上，安装tomcat的路径】&lt;/p&gt;
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>iOS  atomic与nonatomic，assign,copy与retain的定义和区别</title>
@@ -73,6 +40,34 @@ categories:
       <category term="引用计数" scheme="http://yoursite.com/tags/%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0/"/>
     
       <category term="内存回收" scheme="http://yoursite.com/tags/%E5%86%85%E5%AD%98%E5%9B%9E%E6%94%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>maven部署服务器出现的问题</title>
+    <link href="http://yoursite.com/2018/07/18/%E5%B0%86maven%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2018/07/18/将maven部署到服务器出现的问题/</id>
+    <published>2018-07-18T02:51:12.000Z</published>
+    <updated>2018-12-05T01:10:57.412Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;将maven部署windows出现的问题&quot;&gt;&lt;a href=&quot;#将maven部署windows出现的问题&quot; class=&quot;headerlink&quot; title=&quot;将maven部署windows出现的问题&quot;&gt;&lt;/a&gt;将maven部署windows出现的问题&lt;/h3&gt;&lt;h4 id=&quot;1-配置jdk的环境变量：&quot;&gt;&lt;a href=&quot;#1-配置jdk的环境变量：&quot; class=&quot;headerlink&quot; title=&quot;1.配置jdk的环境变量：&quot;&gt;&lt;/a&gt;1.配置jdk的环境变量：&lt;/h4&gt;
+    
+    </summary>
+    
+      <category term="iOS" scheme="http://yoursite.com/categories/iOS/"/>
+    
+      <category term="服务器" scheme="http://yoursite.com/categories/iOS/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/iOS/%E6%9C%8D%E5%8A%A1%E5%99%A8/Linux/"/>
+    
+    
+      <category term="Maven" scheme="http://yoursite.com/tags/Maven/"/>
+    
+      <category term="热部署" scheme="http://yoursite.com/tags/%E7%83%AD%E9%83%A8%E7%BD%B2/"/>
+    
+      <category term="环境变量" scheme="http://yoursite.com/tags/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/"/>
     
   </entry>
   
